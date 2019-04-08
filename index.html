@@ -1,0 +1,2680 @@
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+         <script type="text/javascript" src="discord.11.4.2.js"></script>
+           <script type="text/javascript" src="./jquery-3.3.1.min.js"></script>
+        <script type="text/javascript">
+        const client = new Discord.Client();
+        const client2 = new Discord.Client();
+        const client3 = new Discord.Client();
+        function razp()
+{
+  if(document.getElementById("spi").value == "1")
+  {
+       var hour = document.getElementById("1h").value
+       var min = document.getElementById("1m").value
+       if(parseInt(hour)>24)
+       {
+         hour = "00"
+         document.getElementById("1h").value = "00"
+       }
+       if(hour=="24")
+       {
+         hour = "00"
+         document.getElementById("1h").value = "00"
+       }
+        if(parseInt(min)>60)
+       {
+         min = "00"
+         document.getElementById("1m").value = "00"
+       }
+       if(min=="60")
+       {
+         min = "00"
+         document.getElementById("1m").value = "00"
+       }
+        client.guilds.get('351491707554103296').channels.get('551375947203346433').fetchMessage("551376494169948161")
+           .then(msg => msg.edit(1))
+       client.guilds.get('351491707554103296').channels.get('551373101229932564').fetchMessage("551374007283220480")
+           .then(msg => msg.edit(hour+":"+min))
+         client2.guilds.get('351491707554103296').channels.get('558019292314992649').fetchMessage("558019399861272577")
+           .then(msg =>
+           {
+msg.edit(hour+":"+min)
+document.getElementById("desapp").innerText = "Настройки рассылки: Кол-во постов: 1, Время постинга: "+hour+":"+min
+           } )
+
+  }
+   if(document.getElementById("spi").value == "2")
+  {
+      var hour = document.getElementById("1h").value
+       var min = document.getElementById("1m").value
+        var hour2 = document.getElementById("2h").value
+       var min2 = document.getElementById("2m").value
+       if(parseInt(hour)>24)
+       {
+         hour = "00"
+         document.getElementById("1h").value = "00"
+       }
+       if(hour=="24")
+       {
+         hour = "00"
+         document.getElementById("1h").value = "00"
+       }
+        if(parseInt(min)>60)
+       {
+         min = "00"
+         document.getElementById("1m").value = "00"
+       }
+       if(min=="60")
+       {
+         min = "00"
+         document.getElementById("1m").value = "00"
+       } 
+        if(parseInt(hour2)>24)
+       {
+         hour2 = "00"
+         document.getElementById("2h").value = "00"
+       }
+       if(hour2=="24")
+       {
+         hour2 = "00"
+         document.getElementById("2h").value = "00"
+       }
+        if(parseInt(min2)>60)
+       {
+         min2 = "00"
+         document.getElementById("2m").value = "00"
+       }
+       if(min2=="60")
+       {
+         min2 = "00"
+         document.getElementById("2m").value = "00"
+       } 
+            client.guilds.get('351491707554103296').channels.get('551375947203346433').fetchMessage("551376494169948161")
+           .then(msg => msg.edit(2))
+         client.guilds.get('351491707554103296').channels.get('551373101229932564').fetchMessage("551374007283220480")
+           .then(msg => msg.edit(hour+":"+min))
+           client.guilds.get('351491707554103296').channels.get('551373117021356033').fetchMessage("551375056144695325")
+           .then(msg => msg.edit(hour2+":"+min2))
+          client2.guilds.get('351491707554103296').channels.get('558019292314992649').fetchMessage("558019399861272577")
+           .then(msg =>{
+msg.edit(hour+":"+min+", "+hour2+":"+min2)
+               document.getElementById("desapp").innerText = "Настройки рассылки: Кол-во постов: 2, Время постинга: "+hour+":"+min+", "+hour2+":"+min2
+           } )
+  }
+ if(document.getElementById("spi").value == "3")
+  {
+       var hour = document.getElementById("1h").value
+       var min = document.getElementById("1m").value
+        var hour2 = document.getElementById("2h").value
+       var min2 = document.getElementById("2m").value
+           var hour3 = document.getElementById("3h").value
+       var min3 = document.getElementById("3m").value
+       if(parseInt(hour)>24)
+       {
+         hour = "00"
+         document.getElementById("1h").value = "00"
+       }
+       if(hour=="24")
+       {
+         hour = "00"
+         document.getElementById("1h").value = "00"
+       }
+        if(parseInt(min)>60)
+       {
+         min = "00"
+         document.getElementById("1m").value = "00"
+       }
+       if(min=="60")
+       {
+         min = "00"
+         document.getElementById("1m").value = "00"
+       } 
+        if(parseInt(hour2)>24)
+       {
+         hour2 = "00"
+         document.getElementById("2h").value = "00"
+       }
+       if(hour2=="24")
+       {
+         hour2 = "00"
+         document.getElementById("2h").value = "00"
+       }
+        if(parseInt(min2)>60)
+       {
+         min2 = "00"
+         document.getElementById("2m").value = "00"
+       }
+       if(min2=="60")
+       {
+         min2 = "00"
+         document.getElementById("2m").value = "00"
+       } 
+         if(parseInt(hour3)>24)
+       {
+         hour2 = "00"
+         document.getElementById("3h").value = "00"
+       }
+       if(hour3=="24")
+       {
+         hour3 = "00"
+         document.getElementById("3h").value = "00"
+       }
+        if(parseInt(min3)>60)
+       {
+         min3 = "00"
+         document.getElementById("3m").value = "00"
+       }
+       if(min3=="60")
+       {
+         min3 = "00"
+         document.getElementById("3m").value = "00"
+       } 
+            client.guilds.get('351491707554103296').channels.get('551375947203346433').fetchMessage("551376494169948161")
+           .then(msg => msg.edit(3))
+         client.guilds.get('351491707554103296').channels.get('551373101229932564').fetchMessage("551374007283220480")
+           .then(msg => msg.edit(hour+":"+min))
+           client.guilds.get('351491707554103296').channels.get('551373117021356033').fetchMessage("551375056144695325")
+           .then(msg => msg.edit(hour2+":"+min2))
+             client.guilds.get('351491707554103296').channels.get('551373131634442240').fetchMessage("551375468121817119")
+           .then(msg => msg.edit(hour3+":"+min3))
+     client2.guilds.get('351491707554103296').channels.get('558019292314992649').fetchMessage("558019399861272577")
+           .then(msg => {
+             msg.edit(hour+":"+min+", "+hour2+":"+min2+", "+ hour3+":"+min3)  
+              document.getElementById("desapp").innerText = "Настройки рассылки: Кол-во постов: 3, Время постинга: "+hour+":"+min+", "+hour2+":"+min2+", "+ hour3+":"+min3
+           })
+    
+  }
+   if(document.getElementById("spi").value == "4")
+  {
+       var hour = document.getElementById("1h").value
+       var min = document.getElementById("1m").value
+        var hour2 = document.getElementById("2h").value
+       var min2 = document.getElementById("2m").value
+           var hour3 = document.getElementById("3h").value
+       var min3 = document.getElementById("3m").value
+               var hour4 = document.getElementById("4h").value
+       var min4 = document.getElementById("4m").value
+       if(parseInt(hour)>24)
+       {
+         hour = "00"
+         document.getElementById("1h").value = "00"
+       }
+       if(hour=="24")
+       {
+         hour = "00"
+         document.getElementById("1h").value = "00"
+       }
+        if(parseInt(min)>60)
+       {
+         min = "00"
+         document.getElementById("1m").value = "00"
+       }
+       if(min=="60")
+       {
+         min = "00"
+         document.getElementById("1m").value = "00"
+       } 
+        if(parseInt(hour2)>24)
+       {
+         hour2 = "00"
+         document.getElementById("2h").value = "00"
+       }
+       if(hour2=="24")
+       {
+         hour2 = "00"
+         document.getElementById("2h").value = "00"
+       }
+        if(parseInt(min2)>60)
+       {
+         min2 = "00"
+         document.getElementById("2m").value = "00"
+       }
+       if(min2=="60")
+       {
+         min2 = "00"
+         document.getElementById("2m").value = "00"
+       } 
+         if(parseInt(hour3)>24)
+       {
+         hour3 = "00"
+         document.getElementById("3h").value = "00"
+       }
+       if(hour3=="24")
+       {
+         hour3 = "00"
+         document.getElementById("3h").value = "00"
+       }
+        if(parseInt(min3)>60)
+       {
+         min3 = "00"
+         document.getElementById("3m").value = "00"
+       }
+       if(min3=="60")
+       {
+         min3 = "00"
+         document.getElementById("3m").value = "00"
+       } 
+              if(parseInt(hour4)>24)
+       {
+         hour4 = "00"
+         document.getElementById("4h").value = "00"
+       }
+       if(hour4=="24")
+       {
+         hour4 = "00"
+         document.getElementById("4h").value = "00"
+       }
+        if(parseInt(min4)>60)
+       {
+         min4 = "00"
+         document.getElementById("4m").value = "00"
+       }
+       if(min4=="60")
+       {
+         min4 = "00"
+         document.getElementById("4m").value = "00"
+       } 
+       
+       
+            client.guilds.get('351491707554103296').channels.get('551375947203346433').fetchMessage("551376494169948161")
+           .then(msg => msg.edit(4))
+         client.guilds.get('351491707554103296').channels.get('551373101229932564').fetchMessage("551374007283220480")
+           .then(msg => msg.edit(hour+":"+min))
+           client.guilds.get('351491707554103296').channels.get('551373117021356033').fetchMessage("551375056144695325")
+           .then(msg => msg.edit(hour2+":"+min2))
+             client.guilds.get('351491707554103296').channels.get('551373131634442240').fetchMessage("551375468121817119")
+           .then(msg => msg.edit(hour3+":"+min3))
+            client2.guilds.get('351491707554103296').channels.get('558007776446775298').fetchMessage("558008460160139266")
+           .then(msg => msg.edit(hour4+":"+min4))
+   client2.guilds.get('351491707554103296').channels.get('558019292314992649').fetchMessage("558019399861272577")
+           .then(msg =>{
+               msg.edit(hour+":"+min+", "+hour2+":"+min2+", "+ hour3+":"+min3+", "+hour4+":"+min4)
+                document.getElementById("desapp").innerText = "Настройки рассылки: Кол-во постов: 4, Время постинга: "+hour+":"+min+", "+hour2+":"+min2+", "+ hour3+":"+min3+", "+hour4+":"+min4
+           } )
+    
+  }
+  if(document.getElementById("spi").value == "5")
+  {
+       var hour = document.getElementById("1h").value
+       var min = document.getElementById("1m").value
+        var hour2 = document.getElementById("2h").value
+       var min2 = document.getElementById("2m").value
+           var hour3 = document.getElementById("3h").value
+       var min3 = document.getElementById("3m").value
+               var hour4 = document.getElementById("4h").value
+       var min4 = document.getElementById("4m").value
+           var hour5 = document.getElementById("5h").value
+       var min5 = document.getElementById("5m").value
+       if(parseInt(hour)>24)
+       {
+         hour = "00"
+         document.getElementById("1h").value = "00"
+       }
+       if(hour=="24")
+       {
+         hour = "00"
+         document.getElementById("1h").value = "00"
+       }
+        if(parseInt(min)>60)
+       {
+         min = "00"
+         document.getElementById("1m").value = "00"
+       }
+       if(min=="60")
+       {
+         min = "00"
+         document.getElementById("1m").value = "00"
+       } 
+        if(parseInt(hour2)>24)
+       {
+         hour2 = "00"
+         document.getElementById("2h").value = "00"
+       }
+       if(hour2=="24")
+       {
+         hour2 = "00"
+         document.getElementById("2h").value = "00"
+       }
+        if(parseInt(min2)>60)
+       {
+         min2 = "00"
+         document.getElementById("2m").value = "00"
+       }
+       if(min2=="60")
+       {
+         min2 = "00"
+         document.getElementById("2m").value = "00"
+       } 
+         if(parseInt(hour3)>24)
+       {
+         hour3 = "00"
+         document.getElementById("3h").value = "00"
+       }
+       if(hour3=="24")
+       {
+         hour3 = "00"
+         document.getElementById("3h").value = "00"
+       }
+        if(parseInt(min3)>60)
+       {
+         min3 = "00"
+         document.getElementById("3m").value = "00"
+       }
+       if(min3=="60")
+       {
+         min3 = "00"
+         document.getElementById("3m").value = "00"
+       } 
+              if(parseInt(hour4)>24)
+       {
+         hour4 = "00"
+         document.getElementById("4h").value = "00"
+       }
+       if(hour4=="24")
+       {
+         hour4 = "00"
+         document.getElementById("4h").value = "00"
+       }
+        if(parseInt(min4)>60)
+       {
+         min4 = "00"
+         document.getElementById("4m").value = "00"
+       }
+       if(min4=="60")
+       {
+         min4 = "00"
+         document.getElementById("4m").value = "00"
+       } 
+
+       if(parseInt(hour5)>24)
+       {
+         hour5 = "00"
+         document.getElementById("5h").value = "00"
+       }
+       if(hour5=="24")
+       {
+         hour5 = "00"
+         document.getElementById("5h").value = "00"
+       }
+        if(parseInt(min5)>60)
+       {
+         min5 = "00"
+         document.getElementById("5m").value = "00"
+       }
+       if(min5=="60")
+       {
+         min5 = "00"
+         document.getElementById("5m").value = "00"
+       } 
+       
+       
+            client.guilds.get('351491707554103296').channels.get('551375947203346433').fetchMessage("551376494169948161")
+           .then(msg => msg.edit(5))
+         client.guilds.get('351491707554103296').channels.get('551373101229932564').fetchMessage("551374007283220480")
+           .then(msg => msg.edit(hour+":"+min))
+           client.guilds.get('351491707554103296').channels.get('551373117021356033').fetchMessage("551375056144695325")
+           .then(msg => msg.edit(hour2+":"+min2))
+             client.guilds.get('351491707554103296').channels.get('551373131634442240').fetchMessage("551375468121817119")
+           .then(msg => msg.edit(hour3+":"+min3))
+            client2.guilds.get('351491707554103296').channels.get('558007776446775298').fetchMessage("558008460160139266")
+           .then(msg => msg.edit(hour4+":"+min4))
+             client2.guilds.get('351491707554103296').channels.get('558007793215471645').fetchMessage("558007793215471645")
+           .then(msg => msg.edit(hour5+":"+min5))
+   client2.guilds.get('351491707554103296').channels.get('558019292314992649').fetchMessage("558019399861272577")
+           .then(msg => {
+               msg.edit(hour+":"+min+", "+hour2+":"+min2+", "+ hour3+":"+min3+", "+hour4+":"+min4+", "+hour5+":"+min5)
+                document.getElementById("desapp").innerText = "Настройки рассылки: Кол-во постов: 5, Время постинга: "+hour+":"+min+", "+hour2+":"+min2+", "+ hour3+":"+min3+", "+hour4+":"+min4+", "+hour5+":"+min5
+           } )
+    
+  }
+    if(document.getElementById("spi").value == "6")
+  {
+       var hour = document.getElementById("1h").value
+       var min = document.getElementById("1m").value
+        var hour2 = document.getElementById("2h").value
+       var min2 = document.getElementById("2m").value
+           var hour3 = document.getElementById("3h").value
+       var min3 = document.getElementById("3m").value
+               var hour4 = document.getElementById("4h").value
+       var min4 = document.getElementById("4m").value
+           var hour5 = document.getElementById("5h").value
+       var min5 = document.getElementById("5m").value
+        var hour6 = document.getElementById("6h").value
+       var min6 = document.getElementById("6m").value
+       if(parseInt(hour)>24)
+       {
+         hour = "00"
+         document.getElementById("1h").value = "00"
+       }
+       if(hour=="24")
+       {
+         hour = "00"
+         document.getElementById("1h").value = "00"
+       }
+        if(parseInt(min)>60)
+       {
+         min = "00"
+         document.getElementById("1m").value = "00"
+       }
+       if(min=="60")
+       {
+         min = "00"
+         document.getElementById("1m").value = "00"
+       } 
+        if(parseInt(hour2)>24)
+       {
+         hour2 = "00"
+         document.getElementById("2h").value = "00"
+       }
+       if(hour2=="24")
+       {
+         hour2 = "00"
+         document.getElementById("2h").value = "00"
+       }
+        if(parseInt(min2)>60)
+       {
+         min2 = "00"
+         document.getElementById("2m").value = "00"
+       }
+       if(min2=="60")
+       {
+         min2 = "00"
+         document.getElementById("2m").value = "00"
+       } 
+         if(parseInt(hour3)>24)
+       {
+         hour3 = "00"
+         document.getElementById("3h").value = "00"
+       }
+       if(hour3=="24")
+       {
+         hour3 = "00"
+         document.getElementById("3h").value = "00"
+       }
+        if(parseInt(min3)>60)
+       {
+         min3 = "00"
+         document.getElementById("3m").value = "00"
+       }
+       if(min3=="60")
+       {
+         min3 = "00"
+         document.getElementById("3m").value = "00"
+       } 
+              if(parseInt(hour4)>24)
+       {
+         hour4 = "00"
+         document.getElementById("4h").value = "00"
+       }
+       if(hour4=="24")
+       {
+         hour4 = "00"
+         document.getElementById("4h").value = "00"
+       }
+        if(parseInt(min4)>60)
+       {
+         min4 = "00"
+         document.getElementById("4m").value = "00"
+       }
+       if(min4=="60")
+       {
+         min4 = "00"
+         document.getElementById("4m").value = "00"
+       } 
+
+       if(parseInt(hour5)>24)
+       {
+         hour5 = "00"
+         document.getElementById("5h").value = "00"
+       }
+       if(hour5=="24")
+       {
+         hour5 = "00"
+         document.getElementById("5h").value = "00"
+       }
+        if(parseInt(min5)>60)
+       {
+         min5 = "00"
+         document.getElementById("5m").value = "00"
+       }
+       if(min5=="60")
+       {
+         min5 = "00"
+         document.getElementById("5m").value = "00"
+       } 
+
+         if(parseInt(hour6)>24)
+       {
+         hour6 = "00"
+         document.getElementById("6h").value = "00"
+       }
+       if(hour6=="24")
+       {
+         hour6 = "00"
+         document.getElementById("6h").value = "00"
+       }
+        if(parseInt(min6)>60)
+       {
+         min6 = "00"
+         document.getElementById("6m").value = "00"
+       }
+       if(min6=="60")
+       {
+         min6 = "00"
+         document.getElementById("6m").value = "00"
+       } 
+       
+       
+            client.guilds.get('351491707554103296').channels.get('551375947203346433').fetchMessage("551376494169948161")
+           .then(msg => msg.edit(6))
+         client.guilds.get('351491707554103296').channels.get('551373101229932564').fetchMessage("551374007283220480")
+           .then(msg => msg.edit(hour+":"+min))
+           client.guilds.get('351491707554103296').channels.get('551373117021356033').fetchMessage("551375056144695325")
+           .then(msg => msg.edit(hour2+":"+min2))
+             client.guilds.get('351491707554103296').channels.get('551373131634442240').fetchMessage("551375468121817119")
+           .then(msg => msg.edit(hour3+":"+min3))
+            client2.guilds.get('351491707554103296').channels.get('558007776446775298').fetchMessage("558008460160139266")
+           .then(msg => msg.edit(hour4+":"+min4))
+             client2.guilds.get('351491707554103296').channels.get('558007793215471645').fetchMessage("558008478833180677")
+           .then(msg => msg.edit(hour5+":"+min5))
+               client2.guilds.get('351491707554103296').channels.get('558007804137570334').fetchMessage("558008503625711626")
+           .then(msg => msg.edit(hour6+":"+min6))
+          client2.guilds.get('351491707554103296').channels.get('558019292314992649').fetchMessage("558019399861272577")
+           .then(msg =>{
+             msg.edit(hour+":"+min+", "+hour2+":"+min2+", "+ hour3+":"+min3+", "+hour4+":"+min4+", "+hour5+":"+min5+", "+hour6+":"+min6)   
+              document.getElementById("desapp").innerText = "Настройки рассылки: Кол-во постов: 6, Время постинга: "+hour+":"+min+", "+hour2+":"+min2+", "+ hour3+":"+min3+", "+hour4+":"+min4+", "+hour5+":"+min5+", "+hour6+":"+min6
+           })
+
+    
+  }
+}
+function cl(com, text, n)
+{
+   client2.guilds.get("351491707554103296").channels.get("559693081113264135").fetchMessage("559694168432181259")
+         .then(ms=>{
+              client2.guilds.get("351491707554103296").channels.get("559693081113264135").fetchMessage("559694180062986250")
+         .then(mse=>{
+            client.guilds.get("351491707554103296").channels.get("559693081113264135").fetchMessage("561816369620975616")
+         .then(mst=>{
+                var mseg = ms.content.split("&")
+                 var typi = mst.content.split("&")
+                document.getElementsByClassName("rolegete")[0].style.display = "block"
+                document.getElementById("zagc").value = com
+                document.getElementById("texte").value = text
+                document.getElementById("cm").value = com
+                document.getElementById("msge").value = text
+                console.log(typi[n])
+                document.getElementById("zn").value = n
+ if(typi[n] == 0 || typi[i] == "2")
+  {
+    var kyk;
+
+    if(typi[n] == 0)
+    {
+kyk = "e1"
+    }
+    else
+    {
+      kyk = "e3"
+    }
+    console.log("loh")
+    document.getElementById(kyk).checked = true
+     document.getElementsByClassName("rolegete")[0].style.height = "415px"
+            document.getElementById("ine").style.top = "70"
+          document.getElementsByClassName("rolegetec")[0].style.display = "none"
+  }
+else
+  {
+    console.log("roh")
+document.getElementById("e2").checked = true
+            document.getElementsByClassName("rolegetec")[0].style.display = "block"
+      document.getElementById("usnted").style.display = "block"
+      document.getElementById("usnted").innerText = "Сервер: "+client3.guilds.get(typi[n].split(":")[0]).name+", Канал: "+client3.channels.get(typi[n].split(":")[1]).name
+           document.getElementsByClassName("rolegete")[0].style.height = "625px"
+           document.getElementById("ine").style.top = "280"
+
+  }
+
+         })
+              })
+         
+         })
+        
+}
+     function sh()
+{
+        
+  if(document.getElementById("spi").value == "1")
+  {
+        document.getElementById("2h").disabled = 1
+        document.getElementById("2m").disabled = 1
+        document.getElementById("3h").disabled = 1
+        document.getElementById("3m").disabled = 1
+         document.getElementById("4h").disabled = 1
+        document.getElementById("4m").disabled = 1
+         document.getElementById("5h").disabled = 1
+        document.getElementById("5m").disabled = 1
+         document.getElementById("6h").disabled = 1
+        document.getElementById("6m").disabled = 1
+  }
+   if(document.getElementById("spi").value == "2")
+  {
+        document.getElementById("2h").disabled = 0
+        document.getElementById("2m").disabled = 0
+        document.getElementById("3h").disabled = 1
+        document.getElementById("3m").disabled = 1
+ document.getElementById("4h").disabled = 1
+        document.getElementById("4m").disabled = 1
+         document.getElementById("5h").disabled = 1
+        document.getElementById("5m").disabled = 1
+         document.getElementById("6h").disabled = 1
+        document.getElementById("6m").disabled = 1
+  }
+ if(document.getElementById("spi").value == "3")
+  {
+        document.getElementById("2h").disabled = 0
+        document.getElementById("2m").disabled = 0
+        document.getElementById("3h").disabled = 0
+        document.getElementById("3m").disabled = 0
+                 document.getElementById("4h").disabled = 1
+        document.getElementById("4m").disabled = 1
+         document.getElementById("5h").disabled = 1
+        document.getElementById("5m").disabled = 1
+         document.getElementById("6h").disabled = 1
+        document.getElementById("6m").disabled = 1
+  }
+   if(document.getElementById("spi").value == "4")
+  {
+        document.getElementById("2h").disabled = 0
+        document.getElementById("2m").disabled = 0
+        document.getElementById("3h").disabled = 0
+        document.getElementById("3m").disabled = 0
+                 document.getElementById("4h").disabled = 0
+        document.getElementById("4m").disabled = 0
+         document.getElementById("5h").disabled = 1
+        document.getElementById("5m").disabled = 1
+         document.getElementById("6h").disabled = 1
+        document.getElementById("6m").disabled = 1
+  }
+   if(document.getElementById("spi").value == "5")
+  {
+        document.getElementById("2h").disabled = 0
+        document.getElementById("2m").disabled = 0
+        document.getElementById("3h").disabled = 0
+        document.getElementById("3m").disabled = 0
+                 document.getElementById("4h").disabled = 0
+        document.getElementById("4m").disabled = 0
+         document.getElementById("5h").disabled = 0
+        document.getElementById("5m").disabled = 0
+         document.getElementById("6h").disabled = 1
+        document.getElementById("6m").disabled = 1
+  }
+   if(document.getElementById("spi").value == "6")
+  {
+        document.getElementById("2h").disabled = 0
+        document.getElementById("2m").disabled = 0
+        document.getElementById("3h").disabled = 0
+        document.getElementById("3m").disabled = 0
+                 document.getElementById("4h").disabled = 0
+        document.getElementById("4m").disabled = 0
+         document.getElementById("5h").disabled = 0
+        document.getElementById("5m").disabled = 0
+         document.getElementById("6h").disabled = 0
+        document.getElementById("6m").disabled = 0
+  }
+}
+         function shp()
+{
+        
+  if(document.getElementById("spi").value == "1")
+  {
+        document.getElementById("2h").disabled = 1
+        document.getElementById("2m").disabled = 1
+        document.getElementById("3h").disabled = 1
+        document.getElementById("3m").disabled = 1
+         document.getElementById("4h").disabled = 1
+        document.getElementById("4m").disabled = 1
+         document.getElementById("5h").disabled = 1
+        document.getElementById("5m").disabled = 1
+         document.getElementById("6h").disabled = 1
+        document.getElementById("6m").disabled = 1
+  }
+   if(document.getElementById("spi").value == "2")
+  {
+        document.getElementById("2h").disabled = 0
+        document.getElementById("2m").disabled = 0
+        document.getElementById("3h").disabled = 1
+        document.getElementById("3m").disabled = 1
+ document.getElementById("4h").disabled = 1
+        document.getElementById("4m").disabled = 1
+         document.getElementById("5h").disabled = 1
+        document.getElementById("5m").disabled = 1
+         document.getElementById("6h").disabled = 1
+        document.getElementById("6m").disabled = 1
+  }
+ if(document.getElementById("spi").value == "3")
+  {
+        document.getElementById("2h").disabled = 0
+        document.getElementById("2m").disabled = 0
+        document.getElementById("3h").disabled = 0
+        document.getElementById("3m").disabled = 0
+                 document.getElementById("4h").disabled = 1
+        document.getElementById("4m").disabled = 1
+         document.getElementById("5h").disabled = 1
+        document.getElementById("5m").disabled = 1
+         document.getElementById("6h").disabled = 1
+        document.getElementById("6m").disabled = 1
+  }
+   if(document.getElementById("spi").value == "4")
+  {
+        document.getElementById("2h").disabled = 0
+        document.getElementById("2m").disabled = 0
+        document.getElementById("3h").disabled = 0
+        document.getElementById("3m").disabled = 0
+                 document.getElementById("4h").disabled = 0
+        document.getElementById("4m").disabled = 0
+         document.getElementById("5h").disabled = 1
+        document.getElementById("5m").disabled = 1
+         document.getElementById("6h").disabled = 1
+        document.getElementById("6m").disabled = 1
+  }
+   if(document.getElementById("spi").value == "5")
+  {
+        document.getElementById("2h").disabled = 0
+        document.getElementById("2m").disabled = 0
+        document.getElementById("3h").disabled = 0
+        document.getElementById("3m").disabled = 0
+                 document.getElementById("4h").disabled = 0
+        document.getElementById("4m").disabled = 0
+         document.getElementById("5h").disabled = 0
+        document.getElementById("5m").disabled = 0
+         document.getElementById("6h").disabled = 1
+        document.getElementById("6m").disabled = 1
+  }
+   if(document.getElementById("spi").value == "6")
+  {
+        document.getElementById("2h").disabled = 0
+        document.getElementById("2m").disabled = 0
+        document.getElementById("3h").disabled = 0
+        document.getElementById("3m").disabled = 0
+                 document.getElementById("4h").disabled = 0
+        document.getElementById("4m").disabled = 0
+         document.getElementById("5h").disabled = 0
+        document.getElementById("5m").disabled = 0
+         document.getElementById("6h").disabled = 0
+        document.getElementById("6m").disabled = 0
+  }
+}
+        function lenpp()
+{
+  
+ var lense = client3.guilds.get(document.getElementById("lestpp").value).channels.size
+       var lenser = client3.guilds.get(document.getElementById("lestpp").value).channels.map(g=>g.id)
+       var lensen = client3.guilds.get(document.getElementById("lestpp").value).channels.map(g=>g.name)
+       var lenset = client3.guilds.get(document.getElementById("lestpp").value).channels.map(g=>g.type)
+       for(i=0;i<lense;i++)
+       {
+         if(i==0)
+         {
+           document.getElementById("chlspp").innerHTML = ""
+         }
+         if(lenset[i] == "text")
+         {
+ document.getElementById("chlspp").innerHTML =  document.getElementById("chlspp").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+         }
+        
+         
+       }
+}
+  function apppp(ser, ch)
+     {
+          client2.guilds.get('351491707554103296').channels.get('558021855810682881').fetchMessage("558021902371913743")
+           .then(msg => msg.edit(ser))
+           client2.guilds.get('351491707554103296').channels.get('558021855810682881').fetchMessage("558021912127733848")
+           .then(msg => msg.edit(ch))
+           document.getElementById("usnpp").innerText = "Сервер: "+client3.guilds.get(ser).name+" , Канал: "+client3.channels.get(ch).name
+     }
+        function len()
+{
+  
+ var lense = client3.guilds.get(document.getElementById("lestp").value).channels.size
+       var lenser = client3.guilds.get(document.getElementById("lestp").value).channels.map(g=>g.id)
+       var lensen = client3.guilds.get(document.getElementById("lestp").value).channels.map(g=>g.name)
+       var lenset = client3.guilds.get(document.getElementById("lestp").value).channels.map(g=>g.type)
+       for(i=0;i<lense;i++)
+       {
+         if(i==0)
+         {
+           document.getElementById("chlsp").innerHTML = ""
+         }
+         if(lenset[i] == "text")
+         {
+ document.getElementById("chlsp").innerHTML =  document.getElementById("chlsp").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+         }
+        
+         
+       }
+}
+  function che(zag, text, pic)
+          {
+           
+             if(zag == "" && text =="" && pic == "")
+             {
+                 console.log("nothing")
+             }
+             else
+             {
+                client2.guilds.get('351491707554103296').channels.get('557974121380577293').fetchMessage("557974560478330900")
+           .then(msg => {
+              var ids = msg.content
+client2.guilds.get('351491707554103296').channels.get('557974121380577293').fetchMessage("557974656330760193")
+           .then(msge => {
+ var idc = msge.content
+
+
+                 if(zag == "" && text == "" && pic != "")
+                 {
+                    var embed = new Discord.RichEmbed()
+                   .setImage(pic)
+                    client3.guilds.get(ids).channels.get(idc).send(embed)
+                 }
+                 if(zag == "" && text != "" && pic == "")
+                 {
+                     var embed = new Discord.RichEmbed()
+                    .setDescription(text)
+                    client3.guilds.get(ids).channels.get(idc).send(embed)
+                 }
+                 if(zag == "" && text != "" && pic != "")
+                 {
+                     var embed = new Discord.RichEmbed()
+                    .setDescription(text)
+                      .setImage(pic)
+                    client3.guilds.get(ids).channels.get(idc).send(embed)
+                 }
+                 if(zag != "" && text == "" && pic != "")
+                 {
+                       var embed = new Discord.RichEmbed()
+                    .setTitle(zag)
+                     .setImage(pic)
+                    client3.guilds.get(ids).channels.get(idc).send(embed)
+                 }
+                 if(zag != "" && text != "" && pic == "")
+                 {
+                       var embed = new Discord.RichEmbed()
+                    .setTitle(zag)
+                     .setDescription(text)
+                    client3.guilds.get(ids).channels.get(idc).send(embed)
+                 }
+                 if(zag != "" && text != "" && pic != "")
+                 {
+                      var embed = new Discord.RichEmbed()
+                    .setTitle(zag)
+                     .setDescription(text)
+                      .setImage(pic)
+                    client3.guilds.get(ids).channels.get(idc).send(embed)
+                 }
+           })
+           })
+             }
+
+          }
+         function welcome()
+          {
+            console.log("wow")
+  client.guilds.get('351491707554103296').channels.get('561126720959283210').fetchMessage("561127057623613462")
+           .then(msg => {
+               document.getElementById("textw").value = msg.content
+           })
+            client.guilds.get('351491707554103296').channels.get('561257588075790336').fetchMessage("561257609915662356")
+           .then(msgv => {
+             console.log(msgv.content)
+              if(msgv.content == "0")
+              {
+                document.getElementById("w1").checked = 1
+              }
+               if(msgv.content == "2")
+              {
+                document.getElementById("w3").checked = 1
+              }
+               if(msgv.content == "1")
+              {
+                console.log('www')
+                document.getElementById("w2").checked = 1
+                          document.getElementsByClassName("rolegets")[0].style.display = "block"
+           document.getElementsByClassName("rolegetw")[0].style.height = "548px"
+           document.getElementById("textw").style.top = "275"
+               document.getElementById("butw").style.top = "517"
+    client.guilds.get('351491707554103296').channels.get('561257588075790336').fetchMessage("561257965995294731")
+           .then(msga => {
+           
+       document.getElementById("usnts").innerText = "Сервер: " + client3.guilds.get(msga.content).name + ", Канал: --"
+           })
+           client.guilds.get('351491707554103296').channels.get('561257588075790336').fetchMessage("561257973482258472")
+           .then(msge => {
+document.getElementById("usnts").innerText = document.getElementById("usnts").innerText.replace(", Канал: --", ", Канал: "+client3.channels.get(msge.content).name)
+           } )
+   var lenid = ""
+  var cerfa = 0
+var lense = client3.guilds.size
+       var lenser = client3.guilds.map(g=>g.id)
+       var lensen = client3.guilds.map(g=>g.name)
+       for(i=0;i<lense;i++)
+       {
+              if(i==0)
+          {
+             lenid = lenser[i]
+              document.getElementById("lests").innerHTML = ""
+          }
+          cerfa = cerfa + 1
+         document.getElementById("lests").innerHTML =  document.getElementById("lests").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+         
+       }
+          if(cerfa == lense)
+       {
+           var lense = client3.guilds.get(lenid).channels.size
+       var lenser = client3.guilds.get(lenid).channels.map(g=>g.id)
+       var lensen = client3.guilds.get(lenid).channels.map(g=>g.name)
+       var lenset = client3.guilds.get(lenid).channels.map(g=>g.type)
+       for(i=0;i<lense;i++)
+       {
+         if(i==0)
+         {
+           document.getElementById("chlsts").innerHTML = ""
+         }
+         if(lenset[i] == "text")
+         {
+ document.getElementById("chlsts").innerHTML =  document.getElementById("chlsts").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+         }
+        
+         
+       }
+       }
+              }
+           })
+          }
+          function w1()
+{
+  console.log("w")
+ if(document.getElementById("w1").checked == true)
+  {
+    client.guilds.get('351491707554103296').channels.get('561257588075790336').fetchMessage("561257609915662356")
+           .then(msg => msg.edit(0))
+      document.getElementsByClassName("rolegetw")[0].style.height = "368px"
+           document.getElementById("textw").style.top = "100"
+         document.getElementById("butw").style.top = "339"
+          document.getElementsByClassName("rolegets")[0].style.display = "none"
+  }
+ if(document.getElementById("w2").checked == true)
+  {
+client.guilds.get('351491707554103296').channels.get('561257588075790336').fetchMessage("561257609915662356")
+           .then(msg => msg.edit(1))
+            document.getElementsByClassName("rolegets")[0].style.display = "block"
+           document.getElementsByClassName("rolegetw")[0].style.height = "568px"
+           document.getElementById("textw").style.top = "295"
+               document.getElementById("butw").style.top = "537"
+                client.guilds.get('351491707554103296').channels.get('561257588075790336').fetchMessage("561257965995294731")
+           .then(msga => {
+           
+       document.getElementById("usnts").innerText = "Сервер: " + client3.guilds.get(msga.content).name + ", Канал: --"
+           })
+           client.guilds.get('351491707554103296').channels.get('561257588075790336').fetchMessage("561257973482258472")
+           .then(msge => {
+document.getElementById("usnts").innerText = document.getElementById("usnts").innerText.replace(", Канал: --", ", Канал: "+client3.channels.get(msge.content).name)
+           } )
+   var lenid = ""
+  var cerfa = 0
+var lense = client3.guilds.size
+       var lenser = client3.guilds.map(g=>g.id)
+       var lensen = client3.guilds.map(g=>g.name)
+       for(i=0;i<lense;i++)
+       {
+              if(i==0)
+          {
+             document.getElementById("lests").innerHTML= ""
+             lenid = lenser[i]
+          }
+          cerfa = cerfa + 1
+         document.getElementById("lests").innerHTML =  document.getElementById("lests").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+         
+       }
+          if(cerfa == lense)
+       {
+           var lense = client3.guilds.get(lenid).channels.size
+       var lenser = client3.guilds.get(lenid).channels.map(g=>g.id)
+       var lensen = client3.guilds.get(lenid).channels.map(g=>g.name)
+       var lenset = client3.guilds.get(lenid).channels.map(g=>g.type)
+       for(i=0;i<lense;i++)
+       {
+         if(i==0)
+         {
+           document.getElementById("chlsts").innerHTML = ""
+         }
+         if(lenset[i] == "text")
+         {
+ document.getElementById("chlsts").innerHTML =  document.getElementById("chlsts").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+         }
+        
+         
+       }
+       }
+  }
+   if(document.getElementById("w3").checked == true)
+  {
+client.guilds.get('351491707554103296').channels.get('561257588075790336').fetchMessage("561257609915662356")
+           .then(msg => msg.edit(2))
+             document.getElementsByClassName("rolegetw")[0].style.height = "368px"
+           document.getElementById("textw").style.top = "100"
+         document.getElementById("butw").style.top = "339"
+          document.getElementsByClassName("rolegets")[0].style.display = "none"
+  }
+}
+    function appts(ser, ch)
+     {
+          client.guilds.get('351491707554103296').channels.get('561257588075790336').fetchMessage("561257965995294731")
+           .then(msg => msg.edit(ser))
+           client.guilds.get('351491707554103296').channels.get('561257588075790336').fetchMessage("561257973482258472")
+           .then(msg => msg.edit(ch))
+           document.getElementById("usnts").innerText = "Сервер: "+client3.guilds.get(ser).name+" , Канал: "+client3.channels.get(ch).name
+     }
+             function app(ser, ch)
+     {
+          client2.guilds.get('351491707554103296').channels.get('557974121380577293').fetchMessage("557974560478330900")
+           .then(msg => msg.edit(ser))
+           client2.guilds.get('351491707554103296').channels.get('557974121380577293').fetchMessage("557974656330760193")
+           .then(msg => msg.edit(ch))
+           document.getElementById("usnp").innerText = "Сервер: "+client3.guilds.get(ser).name+" , Канал: "+client3.channels.get(ch).name
+     }
+        function lst()
+{
+
+     client2.guilds.get('351491707554103296').channels.get('557974121380577293').fetchMessage("557974560478330900")
+           .then(msg => {
+            
+       document.getElementById("usnp").innerText = "Сервер: " + client3.guilds.get(msg.content).name + ", Канал: --"
+           })
+            client2.guilds.get('351491707554103296').channels.get('557974121380577293').fetchMessage("557974656330760193")
+           .then(msg => {
+document.getElementById("usnp").innerText = document.getElementById("usnp").innerText.replace(", Канал: --", ", Канал: "+client3.channels.get(msg.content).name)
+           } )
+  var lenid = ""
+  var cerfa = 0
+var lense = client3.guilds.size
+       var lenser = client3.guilds.map(g=>g.id)
+       var lensen = client3.guilds.map(g=>g.name)
+       for(i=0;i<lense;i++)
+       {
+          if(i==0)
+          {
+             lenid = lenser[i]
+             document.getElementById("lestp").innerHTML = ""
+          }
+          cerfa = cerfa + 1
+          console.log(cerfa + " " + lense)
+     
+         document.getElementById("lestp").innerHTML =  document.getElementById("lestp").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+         
+       }
+       if(cerfa == lense)
+       {
+           var lense = client3.guilds.get(lenid).channels.size
+       var lenser = client3.guilds.get(lenid).channels.map(g=>g.id)
+       var lensen = client3.guilds.get(lenid).channels.map(g=>g.name)
+       var lenset = client3.guilds.get(lenid).channels.map(g=>g.type)
+       for(i=0;i<lense;i++)
+       {
+         if(i==0)
+         {
+           document.getElementById("chlsp").innerHTML = ""
+         }
+         if(lenset[i] == "text")
+         {
+ document.getElementById("chlsp").innerHTML =  document.getElementById("chlsp").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+         }
+        
+         
+       }
+       }
+}
+        function pic()
+{
+ 
+   
+  
+       document.getElementById("usn").innerText = "Username: " + client3.user.username
+console.log(client2.user.avatarURL)
+if(client3.user.avatarURL == null)
+{
+  document.getElementById("oc").src = "./discord.jpg"
+}
+else
+{
+document.getElementById("oc").src = client3.user.avatarURL
+}
+  client.guilds.get('351491707554103296').channels.get('551377626833485844').fetchMessage("551384449116274690")
+     .then(msg => document.getElementById("bc").checked = parseInt(msg.content))
+
+           client.guilds.get('351491707554103296').channels.get('551384140268699648').fetchMessage("551384747365105674")
+           .then(msg =>  document.getElementById("bc2").checked = parseInt(msg.content))
+ client.guilds.get('351491707554103296').channels.get('558707260700885054').fetchMessage("558707284176273450")
+           .then(msg => {
+   document.getElementById("shps").innerText = "Пароль: "+msg.content
+           })
+ 
+    
+ 
+}
+function post()
+{
+   console.log(client2.user.username)
+         client2.guilds.get('351491707554103296').channels.get('558021855810682881').fetchMessage("558021902371913743")
+           .then(msg => {
+       document.getElementById("usnpp").innerText = "Сервер: " + client3.guilds.get(msg.content).name + ", Канал: --"
+           })
+            client2.guilds.get('351491707554103296').channels.get('558021855810682881').fetchMessage("558021912127733848")
+           .then(msg => {
+document.getElementById("usnpp").innerText = document.getElementById("usnpp").innerText.replace(", Канал: --", ", Канал: "+client3.channels.get(msg.content).name)
+           } )
+   var lenid = ""
+  var cerfa = 0
+var lense = client3.guilds.size
+       var lenser = client3.guilds.map(g=>g.id)
+       var lensen = client3.guilds.map(g=>g.name)
+       for(i=0;i<lense;i++)
+       {
+         if(i==0)
+          {
+             lenid = lenser[i]
+             document.getElementById("lestpp").innerHTML = ""
+          }
+          cerfa = cerfa + 1
+          
+         document.getElementById("lestpp").innerHTML =  document.getElementById("lestpp").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+         
+       }
+       if(cerfa == lense)
+       {
+           var lense = client3.guilds.get(lenid).channels.size
+       var lenser = client3.guilds.get(lenid).channels.map(g=>g.id)
+       var lensen = client3.guilds.get(lenid).channels.map(g=>g.name)
+       var lenset = client3.guilds.get(lenid).channels.map(g=>g.type)
+       for(i=0;i<lense;i++)
+       {
+         if(i==0)
+         {
+           document.getElementById("chlspp").innerHTML = ""
+         }
+         if(lenset[i] == "text")
+         {
+ document.getElementById("chlspp").innerHTML =  document.getElementById("chlspp").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+         }
+        
+         
+       }
+       }
+  client.guilds.get('351491707554103296').channels.get('551375947203346433').fetchMessage("551376494169948161")
+           .then(msg => {
+                  client2.guilds.get('351491707554103296').channels.get('558019292314992649').fetchMessage("558019399861272577")
+           .then(msge => {
+document.getElementById("desapp").innerText = "Настройки рассылки: Кол-во постов: "+msg.content+", Время постинга: "+msge.content
+           })
+              
+          
+  
+           })
+
+
+  
+}
+        function change() {
+            var blocki = document.getElementsByClassName("wowe")
+    for(i=0;i<blocki.length;i++)
+    {
+        
+        var el = blocki[i].style.display
+        if(el=="block" && blocki[i].id != "pot")
+        {
+            
+            document.getElementById(blocki[i].id).style.display = "none"
+            document.getElementById("pot").style.display = "block"
+            lst()
+        }
+    }
+        }
+        function change2() {
+              var blocki = document.getElementsByClassName("wowe")
+    for(i=0;i<blocki.length;i++)
+    {
+        
+        var el = blocki[i].style.display
+        if(el=="block" && blocki[i].id != "start")
+        {
+            
+            document.getElementById(blocki[i].id).style.display = "none"
+            document.getElementById("start").style.display = "block"
+            pic()
+        }
+    }
+        }
+         function change3() {
+                 var blocki = document.getElementsByClassName("wowe")
+    for(i=0;i<blocki.length;i++)
+    {
+        
+        var el = blocki[i].style.display
+        if(el=="block" && blocki[i].id != "online")
+        {
+            
+            document.getElementById(blocki[i].id).style.display = "none"
+            document.getElementById("online").style.display = "block"
+            post()
+        }
+    }
+        }
+         function change4() {
+                         var blocki = document.getElementsByClassName("wowe")
+    for(i=0;i<blocki.length;i++)
+    {
+        
+        var el = blocki[i].style.display
+        if(el=="block" && blocki[i].id != "telega")
+        {
+            
+            document.getElementById(blocki[i].id).style.display = "none"
+            document.getElementById("telega").style.display = "block"
+            telega()
+        }
+    }
+        }
+         function change5() {
+           
+           var blocki = document.getElementsByClassName("wowe")
+    for(i=0;i<blocki.length;i++)
+    {
+        
+        var el = blocki[i].style.display
+        if(el=="block" && blocki[i].id != "com")
+        {
+            
+            document.getElementById(blocki[i].id).style.display = "none"
+            document.getElementById("com").style.display = "block"
+            coms()
+        }
+    }
+            
+        }
+        function change6() {
+           
+           var blocki = document.getElementsByClassName("wowe")
+    for(i=0;i<blocki.length;i++)
+    {
+        
+        var el = blocki[i].style.display
+        if(el=="block" && blocki[i].id != "welcome")
+        {
+            
+            document.getElementById(blocki[i].id).style.display = "none"
+            document.getElementById("welcome").style.display = "block"
+            document.getElementsByClassName("rolegetw")[0].style.display = "block"
+            welcome()
+        }
+    }
+            
+        }
+        function telega()
+        {
+           
+     client.guilds.get('351491707554103296').channels.get('558694177928380419').fetchMessage("558694659686137867")
+           .then(msg => {
+       document.getElementById("usnt").innerText = "Сервер: " + client3.guilds.get(msg.content).name + ", Канал: --"
+           })
+            client.guilds.get('351491707554103296').channels.get('558694177928380419').fetchMessage("558694670906163210")
+           .then(msg => {
+document.getElementById("usnt").innerText = document.getElementById("usnt").innerText.replace(", Канал: --", ", Канал: "+client3.channels.get(msg.content).name)
+           } )
+   var lenid = ""
+  var cerfa = 0
+var lense = client3.guilds.size
+       var lenser = client3.guilds.map(g=>g.id)
+       var lensen = client3.guilds.map(g=>g.name)
+       for(i=0;i<lense;i++)
+       {
+              if(i==0)
+          {
+             lenid = lenser[i]
+             document.getElementById("lestt").innerHTML = ""
+          }
+          cerfa = cerfa + 1
+         document.getElementById("lestt").innerHTML =  document.getElementById("lestt").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+         
+       }
+          if(cerfa == lense)
+       {
+           var lense = client3.guilds.get(lenid).channels.size
+       var lenser = client3.guilds.get(lenid).channels.map(g=>g.id)
+       var lensen = client3.guilds.get(lenid).channels.map(g=>g.name)
+       var lenset = client3.guilds.get(lenid).channels.map(g=>g.type)
+       for(i=0;i<lense;i++)
+       {
+         if(i==0)
+         {
+           document.getElementById("chlst").innerHTML = ""
+         }
+         if(lenset[i] == "text")
+         {
+ document.getElementById("chlst").innerHTML =  document.getElementById("chlst").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+         }
+        
+         
+       }
+       }
+        }
+         function lent()
+{
+  
+ var lense = client3.guilds.get(document.getElementById("lestt").value).channels.size
+       var lenser = client3.guilds.get(document.getElementById("lestt").value).channels.map(g=>g.id)
+       var lensen = client3.guilds.get(document.getElementById("lestt").value).channels.map(g=>g.name)
+       var lenset = client3.guilds.get(document.getElementById("lestt").value).channels.map(g=>g.type)
+       for(i=0;i<lense;i++)
+       {
+         if(i==0)
+         {
+           document.getElementById("chlst").innerHTML = ""
+         }
+         if(lenset[i] == "text")
+         {
+ document.getElementById("chlst").innerHTML =  document.getElementById("chlst").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+         }
+        
+         
+       }
+}
+      function appt(ser, ch)
+     {
+          client.guilds.get('351491707554103296').channels.get('558694177928380419').fetchMessage("558694659686137867")
+           .then(msg => msg.edit(ser))
+           client.guilds.get('351491707554103296').channels.get('558694177928380419').fetchMessage("558694670906163210")
+           .then(msg => msg.edit(ch))
+           document.getElementById("usnt").innerText = "Сервер: "+client3.guilds.get(ser).name+" , Канал: "+client3.channels.get(ch).name
+     }
+      function hev()
+     {
+        if(client.user == null && client2.user == null && client3.user == null)
+        {
+            alert("Боты еще не авторизованы")
+        }
+        else
+        {
+             client.guilds.get('351491707554103296').channels.get('558707260700885054').fetchMessage("558707284176273450")
+           .then(msg => {
+
+if(document.getElementById("zav").value == msg.content)
+{
+    document.getElementById("verf").style = "display: none;"
+    document.getElementById("start").style = "display: block;"
+   
+    pic()
+}
+else
+{  
+     document.getElementById("err").style = "display: block;"
+
+}
+           }) 
+      
+ 
+
+     }
+     }
+           function runScriptv(e) {
+    //See notes about 'which' and 'key'
+    if (e.keyCode == 13) {
+        hev()
+    }
+}
+function parol(e) {
+    //See notes about 'which' and 'key'
+    if (e.keyCode == 13) {
+        pass()
+    }
+}
+function us(e) {
+    //See notes about 'which' and 'key'
+    if (e.keyCode == 13) {
+        hl()
+    }
+}
+function avae(e) {
+    //See notes about 'which' and 'key'
+    if (e.keyCode == 13) {
+        he()
+    }
+}
+function texh(e) {
+    //See notes about 'which' and 'key'
+    if (e.keyCode == 13) {
+        ched(document.getElementById('zagc').value, document.getElementById('texte').value)
+    }
+}
+function coma(e) {
+    //See notes about 'which' and 'key'
+    if (e.keyCode == 13) {
+      ched(document.getElementById('zagc').value, document.getElementById('texte').value)
+    }
+}
+function texhc(e) {
+    //See notes about 'which' and 'key'
+    if (e.keyCode == 13) {
+        chec(document.getElementById('zage').value, document.getElementById('textc').value)
+    }
+}
+function comac(e) {
+    //See notes about 'which' and 'key'
+    if (e.keyCode == 13) {
+      chec(document.getElementById('zage').value, document.getElementById('textc').value)
+    }
+}
+function ce(e)
+{
+
+      if(e.keyCode == 13 && e.ctrlKey)
+      {
+        document.getElementById('textw').value = document.getElementById('textw').value +"\n"
+      }
+
+}
+function textw(e)
+{
+  console.log(e)
+
+  if(e.keyCode == 13)
+  {
+    chew(document.getElementById('textw').value)
+  }
+}
+function bc()
+{
+  if(document.getElementById("bc").checked == false)
+  {
+    client.guilds.get('351491707554103296').channels.get('551377626833485844').fetchMessage("551384449116274690")
+           .then(msg => msg.edit(0))
+      
+  }
+  else
+  {
+client.guilds.get('351491707554103296').channels.get('551377626833485844').fetchMessage("551384449116274690")
+           .then(msg => msg.edit(1))
+  }
+}
+    function chew(text)
+     {
+       if(text=="")
+       {
+         alert("Введите текст")
+       }
+       else
+       {
+          client.guilds.get("351491707554103296").channels.get("561126720959283210").fetchMessage("561127057623613462")
+         .then(ms=>{
+         
+ms.edit(text)
+alert("Сообщение успешно изменено")
+         
+
+         })
+       }
+     }
+function bc2()
+{
+  if(document.getElementById("bc2").checked == false)
+  {
+    client.guilds.get('351491707554103296').channels.get('551384140268699648').fetchMessage("551384747365105674")
+           .then(msg => msg.edit(0))
+  }
+  else
+  {
+   client.guilds.get('351491707554103296').channels.get('551384140268699648').fetchMessage("551384747365105674")
+           .then(msg => msg.edit(1))
+  }
+}
+function lents()
+{
+  
+ var lense = client3.guilds.get(document.getElementById("lests").value).channels.size
+       var lenser = client3.guilds.get(document.getElementById("lests").value).channels.map(g=>g.id)
+       var lensen = client3.guilds.get(document.getElementById("lests").value).channels.map(g=>g.name)
+       var lenset = client3.guilds.get(document.getElementById("lests").value).channels.map(g=>g.type)
+       for(i=0;i<lense;i++)
+       {
+         if(i==0)
+         {
+           document.getElementById("chlsts").innerHTML = ""
+         }
+         if(lenset[i] == "text")
+         {
+ document.getElementById("chlsts").innerHTML =  document.getElementById("chlsts").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+         }
+        
+         
+       }
+}
+function he()
+{
+ 
+ client.guilds.get("351491707554103296").channels.get("382058565776572417").send("-ava "+document.getElementById("za").value)
+  
+}
+function hl()
+{
+    var name = document.getElementById("titles").value
+
+ client3.user.setUsername(name).then(user => console.log(`My new username is ${user.username}`))
+  .catch(console.error);
+}
+function gc(com, n)
+{
+  if(com == "help")
+  {
+ client2.guilds.get("351491707554103296").channels.get("562095836389965872").fetchMessage("562095968305152010")
+         .then(ms=>{
+              client2.guilds.get("351491707554103296").channels.get("562095836389965872").fetchMessage("562099983482880021")
+         .then(mse=>{
+            client.guilds.get("351491707554103296").channels.get("562095836389965872").fetchMessage("562099990307274762")
+         .then(ser=>{
+           client.guilds.get("351491707554103296").channels.get("562095836389965872").fetchMessage("562099997529604106")
+         .then(chl=>{
+                 document.getElementById("usnted").innerText = "Сервер: "+client3.guilds.get(ser.content).name+", Канал: "+client3.channels.get(chl.content).name
+                document.getElementsByClassName("rolegete")[0].style.display = "block"
+                if(document.getElementById("bute").style.top == "75px")
+                {
+                  document.getElementById("bute").style.top = "328"
+                }
+                     document.getElementById("ine").style.top = "70"
+                  document.getElementsByClassName("rolegete")[0].style.height = "438"
+                document.getElementById("zagc").value = "help"
+                 document.getElementById("texte").style.display = "block"
+                document.getElementById("texte").value = mse.content
+            
+                document.getElementById("zn").value = n
+                 document.getElementById("ceh").value = com
+ if(ms.content == "0" || ms.content == "2")
+  {
+    var kyk;
+
+    if(ms.content == "0")
+    {
+kyk = "e1"
+    }
+    else
+    {
+      kyk = "e3"
+    }
+    console.log("loh")
+    document.getElementById(kyk).checked = true
+     
+       
+          document.getElementsByClassName("rolegetec")[0].style.display = "none"
+  }
+else
+  {
+    console.log("roh")
+document.getElementById("e2").checked = true
+            document.getElementsByClassName("rolegetec")[0].style.display = "block"
+      document.getElementById("usnted").style.display = "block"
+      document.getElementById("usnted").innerText = "Сервер: "+client3.guilds.get(ser.content).name+", Канал: "+client3.channels.get(chl.content).name
+           document.getElementsByClassName("rolegete")[0].style.height = "625px"
+           document.getElementById("ine").style.top = "280"
+
+  }
+         })
+         })
+              })
+         
+         })
+  }
+   if(com == "rules")
+  {
+ client.guilds.get("351491707554103296").channels.get("562095870313758732").fetchMessage("562095935698632732")
+         .then(ms=>{
+              client2.guilds.get("351491707554103296").channels.get("562095870313758732").fetchMessage("562101123448700929")
+         .then(mse=>{
+            client.guilds.get("351491707554103296").channels.get("562095870313758732").fetchMessage("562101130667098157")
+         .then(ser=>{
+           client.guilds.get("351491707554103296").channels.get("562095870313758732").fetchMessage("562101137398824961")
+         .then(chl=>{
+                document.getElementById("usnted").innerText = "Сервер: "+client3.guilds.get(ser.content).name+", Канал: "+client3.channels.get(chl.content).name
+                document.getElementsByClassName("rolegete")[0].style.display = "block"
+                if(document.getElementById("bute").style.top == "75px")
+                {
+                  document.getElementById("bute").style.top = "328"
+                }
+                     document.getElementById("ine").style.top = "70"
+                  document.getElementsByClassName("rolegete")[0].style.height = "438"
+                document.getElementById("zagc").value = "rules"
+                 document.getElementById("texte").style.display = "block"
+                document.getElementById("texte").value = mse.content
+            
+                document.getElementById("zn").value = n
+                 document.getElementById("ceh").value = com
+ if(ms.content == "0" || ms.content == "2")
+  {
+    var kyk;
+
+    if(ms.content == "0")
+    {
+kyk = "e1"
+    }
+    else
+    {
+      kyk = "e3"
+    }
+    console.log("loh")
+    document.getElementById(kyk).checked = true
+     
+       
+          document.getElementsByClassName("rolegetec")[0].style.display = "none"
+  }
+else
+  {
+    console.log("roh")
+document.getElementById("e2").checked = true
+            document.getElementsByClassName("rolegetec")[0].style.display = "block"
+      document.getElementById("usnted").style.display = "block"
+      document.getElementById("usnted").innerText = "Сервер: "+client3.guilds.get(ser.content).name+", Канал: "+client3.channels.get(chl.content).name
+           document.getElementsByClassName("rolegete")[0].style.height = "625px"
+           document.getElementById("ine").style.top = "280"
+
+  }
+         })
+         })
+              })
+         
+         })
+  }
+  if(com == "online")
+  {
+ client.guilds.get("351491707554103296").channels.get("562095859047858196").fetchMessage("562095953213915136")
+         .then(ms=>{
+              client.guilds.get("351491707554103296").channels.get("562095859047858196").fetchMessage("562098785400913930")
+         .then(mse=>{
+            client.guilds.get("351491707554103296").channels.get("562095859047858196").fetchMessage("562098792405663764")
+         .then(ser=>{
+        
+     
+                document.getElementById("usnted").innerText = "Сервер: "+client3.guilds.get(mse.content).name+", Канал: "+client3.channels.get(ser.content).name
+                document.getElementsByClassName("rolegete")[0].style.display = "block"
+               
+                document.getElementById("zagc").value = "online"
+                document.getElementById("texte").style.display = "none"
+            
+                document.getElementById("zn").value = ms.content
+                 document.getElementById("ceh").value = com
+ if(ms.content == "0" || ms.content == "2")
+  {
+    var kyk;
+
+    if(ms.content == "0")
+    {
+kyk = "e1"
+    }
+    else
+    {
+      kyk = "e3"
+    }
+    console.log("loh")
+    document.getElementById(kyk).checked = true
+          document.getElementById("ine").style.top = "90"
+                  document.getElementsByClassName("rolegete")[0].style.height = "198"
+       document.getElementById("bute").style.top = "70"
+          document.getElementsByClassName("rolegetec")[0].style.display = "none"
+  }
+else
+  {
+    console.log("roh")
+document.getElementById("e2").checked = true
+            document.getElementsByClassName("rolegetec")[0].style.display = "block"
+      document.getElementById("usnted").style.display = "block"
+      document.getElementById("usnted").innerText = "Сервер: "+client3.guilds.get(mse.content).name+", Канал: "+client3.channels.get(ser.content).name
+           document.getElementsByClassName("rolegete")[0].style.height = "405px"
+           document.getElementById("ine").style.top = "280"
+              
+document.getElementById("bute").style.top = "75"
+  }
+         })
+         })
+              })
+         
+       
+  }
+  
+}
+function coms1()
+{
+    document.getElementById("commands").innerHTML = ""
+        document.getElementById("checks").innerText = "1"
+         client2.guilds.get("351491707554103296").channels.get("559693081113264135").fetchMessage("559694168432181259")
+         .then(ms=>{
+              client2.guilds.get("351491707554103296").channels.get("559693081113264135").fetchMessage("559694180062986250")
+         .then(mse=>{
+           client.guilds.get("351491707554103296").channels.get("559693081113264135").fetchMessage("561816369620975616")
+         .then(mst=>{
+              var msgs = mse.content.split("&")
+           var commands = ms.content.split("&")
+   var typo = mst.content.split("&")
+           var kek;
+  
+    
+         
+   
+   var lenid = ""
+  var cerfa = 0
+var lense = client3.guilds.size
+       var lenser = client3.guilds.map(g=>g.id)
+       var lensen = client3.guilds.map(g=>g.name)
+       for(i=0;i<lense;i++)
+       {
+              if(i==0)
+          {
+             lenid = lenser[i]
+          }
+          cerfa = cerfa + 1
+         document.getElementById("lestc").innerHTML =  document.getElementById("lestc").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+                  document.getElementById("lestec").innerHTML =  document.getElementById("lestec").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+         
+       }
+          if(cerfa == lense)
+       {
+           var lense = client3.guilds.get(lenid).channels.size
+       var lenser = client3.guilds.get(lenid).channels.map(g=>g.id)
+       var lensen = client3.guilds.get(lenid).channels.map(g=>g.name)
+       var lenset = client3.guilds.get(lenid).channels.map(g=>g.type)
+       for(i=0;i<lense;i++)
+       {
+         if(i==0)
+         {
+           document.getElementById("chlstc").innerHTML = ""
+           document.getElementById("chlstec").innerHTML = ""
+         }
+         if(lenset[i] == "text")
+         {
+ document.getElementById("chlstc").innerHTML =  document.getElementById("chlstc").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+  document.getElementById("chlstec").innerHTML =  document.getElementById("chlstec").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+         }
+        
+         
+       }
+       }
+           var size = commands.length
+         var cha = ["562095836389965872","562095859047858196","562095870313758732"]
+         var mas = ["562095968305152010","562095953213915136","562095935698632732"]
+         var tap = ["help","online","rules"]
+           var sizes = msgs.length
+           for(i=0;i<3;i++)
+           {
+              console.log(i)
+       if(i==0)
+       {
+client.guilds.get("351491707554103296").channels.get("562095836389965872").fetchMessage("562095968305152010")
+         .then(come=>{
+           
+         
+         
+ document.getElementById("commands").innerHTML =  document.getElementById("commands").innerHTML + "\n<div id='help'  value="+come.content+" class='comanda'><button id='help' onclick='gc(\"help\",\""+come.content+"\")' class='red'>✎</button><b>help</b></div>"
+         })
+       }
+        if(i==1)
+       {
+         client.guilds.get("351491707554103296").channels.get("562095859047858196").fetchMessage("562095953213915136")
+         .then(come=>{
+          document.getElementById("commands").innerHTML =  document.getElementById("commands").innerHTML + "\n<div id='onlini'  value="+come.content+" class='comanda'><button id='onlini' onclick='gc(\"online\",\""+come.content+"\")' class='red'>✎</button><b>online</b></div>"
+         })
+      }
+        if(i==2)
+       {
+        
+         client.guilds.get("351491707554103296").channels.get("562095870313758732").fetchMessage("562095935698632732")
+         .then(come=>{
+         document.getElementById("commands").innerHTML =  document.getElementById("commands").innerHTML + "\n<div id='rules'  value="+come.content+" class='comanda'><button id='rules' onclick='gc(\"rules\",\""+come.content+"\")' class='red'>✎</button><b>rules</b></div>"
+         })
+      }
+              
+            
+           }
+           for(i=0;i<size-1;i++)
+           {
+           console.log(typo[i])
+             if(typo[i] == "0" || typo[i] == "2")
+             {
+               console.log("lkl")
+kek = typo[i]
+             }
+       
+             else
+             {
+               kek = 1
+             }
+              console.log(commands[i] + " " + msgs[i])
+              document.getElementById("commands").innerHTML =  document.getElementById("commands").innerHTML + "\n<div id=\""+i+"\" value="+kek+" class='comanda'><button id='"+i+"d' onclick='dlet(\""+commands[i]+"\",\""+msgs[i]+"\","+i+")' class='dlt'>✖</button><button id="+i+" onclick='cl(\""+commands[i]+"\",\""+msgs[i]+"\","+i+")' class='red'>✎</button><b>"+commands[i]+"</b><br><p>"+msgs[i]+"</p></div>"
+           }
+            })
+         })
+         
+         })
+   
+
+        
+}
+function coms()
+{
+    if(document.getElementById("checks").innerText == "0")
+    {
+        document.getElementById("checks").innerText = "1"
+         client2.guilds.get("351491707554103296").channels.get("559693081113264135").fetchMessage("559694168432181259")
+         .then(ms=>{
+              client2.guilds.get("351491707554103296").channels.get("559693081113264135").fetchMessage("559694180062986250")
+         .then(mse=>{
+           client.guilds.get("351491707554103296").channels.get("559693081113264135").fetchMessage("561816369620975616")
+         .then(mst=>{
+              var msgs = mse.content.split("&")
+           var commands = ms.content.split("&")
+   var typo = mst.content.split("&")
+           var kek;
+  
+    
+         
+   
+   var lenid = ""
+  var cerfa = 0
+var lense = client3.guilds.size
+       var lenser = client3.guilds.map(g=>g.id)
+       var lensen = client3.guilds.map(g=>g.name)
+       for(i=0;i<lense;i++)
+       {
+              if(i==0)
+          {
+             lenid = lenser[i]
+          }
+          cerfa = cerfa + 1
+         document.getElementById("lestc").innerHTML =  document.getElementById("lestc").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+                  document.getElementById("lestec").innerHTML =  document.getElementById("lestec").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+         
+       }
+          if(cerfa == lense)
+       {
+           var lense = client3.guilds.get(lenid).channels.size
+       var lenser = client3.guilds.get(lenid).channels.map(g=>g.id)
+       var lensen = client3.guilds.get(lenid).channels.map(g=>g.name)
+       var lenset = client3.guilds.get(lenid).channels.map(g=>g.type)
+       for(i=0;i<lense;i++)
+       {
+         if(i==0)
+         {
+           document.getElementById("chlstc").innerHTML = ""
+           document.getElementById("chlstec").innerHTML = ""
+         }
+         if(lenset[i] == "text")
+         {
+ document.getElementById("chlstc").innerHTML =  document.getElementById("chlstc").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+  document.getElementById("chlstec").innerHTML =  document.getElementById("chlstec").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+         }
+        
+         
+       }
+       }
+           var size = commands.length
+         var cha = ["562095836389965872","562095859047858196","562095870313758732"]
+         var mas = ["562095968305152010","562095953213915136","562095935698632732"]
+         var tap = ["help","online","rules"]
+           var sizes = msgs.length
+           for(i=0;i<3;i++)
+           {
+              console.log(i)
+       if(i==0)
+       {
+client.guilds.get("351491707554103296").channels.get("562095836389965872").fetchMessage("562095968305152010")
+         .then(come=>{
+           
+         
+         
+ document.getElementById("commands").innerHTML =  document.getElementById("commands").innerHTML + "\n<div id='help'  value="+come.content+" class='comanda'><button id='help' onclick='gc(\"help\",\""+come.content+"\")' class='red'>✎</button><b>help</b></div>"
+         })
+       }
+        if(i==1)
+       {
+         client.guilds.get("351491707554103296").channels.get("562095859047858196").fetchMessage("562095953213915136")
+         .then(come=>{
+          document.getElementById("commands").innerHTML =  document.getElementById("commands").innerHTML + "\n<div id='onlini'  value="+come.content+" class='comanda'><button id='onlini' onclick='gc(\"online\",\""+come.content+"\")' class='red'>✎</button><b>online</b></div>"
+         })
+      }
+        if(i==2)
+       {
+        
+         client.guilds.get("351491707554103296").channels.get("562095870313758732").fetchMessage("562095935698632732")
+         .then(come=>{
+         document.getElementById("commands").innerHTML =  document.getElementById("commands").innerHTML + "\n<div id='rules'  value="+come.content+" class='comanda'><button id='rules' onclick='gc(\"rules\",\""+come.content+"\")' class='red'>✎</button><b>rules</b></div>"
+         })
+      }
+              
+            
+           }
+           for(i=0;i<size-1;i++)
+           {
+           console.log(typo[i])
+             if(typo[i] == "0" || typo[i] == "2")
+             {
+               console.log("lkl")
+kek = typo[i]
+             }
+       
+             else
+             {
+               kek = 1
+             }
+              console.log(commands[i] + " " + msgs[i])
+              document.getElementById("commands").innerHTML =  document.getElementById("commands").innerHTML + "\n<div id=\""+i+"\" value="+kek+" class='comanda'><button id='"+i+"d' onclick='dlet(\""+commands[i]+"\",\""+msgs[i]+"\","+i+")' class='dlt'>✖</button><button id="+i+" onclick='cl(\""+commands[i]+"\",\""+msgs[i]+"\","+i+")' class='red'>✎</button><b>"+commands[i]+"</b><br><p>"+msgs[i]+"</p></div>"
+           }
+            })
+         })
+         
+         })
+    }
+
+        
+}
+
+     function clos()
+     {
+        console.log("wow")
+         document.getElementsByClassName("rolegetc")[0].style.display = "none"
+     }
+      function closed()
+     {
+        console.log("wow")
+         document.getElementsByClassName("rolegete")[0].style.display = "none"
+     }
+     function chew(text)
+     {
+       if(text=="")
+       {
+         alert("Введите текст")
+       }
+       else
+       {
+          client.guilds.get("351491707554103296").channels.get("561126720959283210").fetchMessage("561127057623613462")
+         .then(ms=>{
+   if(document.getElementById("w3").checked == true)
+           {
+             alert("Сообщение теперь не отправляется!")
+           }
+           else
+           {
+ms.edit(text)
+alert("Сообщение успешно изменено")
+           }
+         })
+       }
+     }
+     function lentc()
+{
+  
+ var lense = client3.guilds.get(document.getElementById("lestc").value).channels.size
+       var lenser = client3.guilds.get(document.getElementById("lestc").value).channels.map(g=>g.id)
+       var lensen = client3.guilds.get(document.getElementById("lestc").value).channels.map(g=>g.name)
+       var lenset = client3.guilds.get(document.getElementById("lestc").value).channels.map(g=>g.type)
+       for(i=0;i<lense;i++)
+       {
+         if(i==0)
+         {
+           document.getElementById("chlstc").innerHTML = ""
+         }
+         if(lenset[i] == "text")
+         {
+ document.getElementById("chlstc").innerHTML =  document.getElementById("chlstc").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+         }
+        
+         
+       }
+}
+function lentec()
+{
+  
+ var lense = client3.guilds.get(document.getElementById("lestec").value).channels.size
+       var lenser = client3.guilds.get(document.getElementById("lestec").value).channels.map(g=>g.id)
+       var lensen = client3.guilds.get(document.getElementById("lestec").value).channels.map(g=>g.name)
+       var lenset = client3.guilds.get(document.getElementById("lestec").value).channels.map(g=>g.type)
+       for(i=0;i<lense;i++)
+       {
+         if(i==0)
+         {
+           document.getElementById("chlstec").innerHTML = ""
+         }
+         if(lenset[i] == "text")
+         {
+ document.getElementById("chlstec").innerHTML =  document.getElementById("chlstec").innerHTML + "\n<option value="+lenser[i]+">"+lensen[i]+"</option>"
+         }
+        
+         
+       }
+}
+function dlet(zag,text,n)
+{
+  client2.guilds.get("351491707554103296").channels.get("559693081113264135").fetchMessage("559694168432181259")
+         .then(ms=>{
+              client2.guilds.get("351491707554103296").channels.get("559693081113264135").fetchMessage("559694180062986250")
+         .then(mse=>{
+            client.guilds.get("351491707554103296").channels.get("559693081113264135").fetchMessage("561816369620975616")
+         .then(mst=>{
+          
+           if( confirm("Вы точно хотите удалить?"))
+           {
+               var mesg = ms.content.replace(zag, "")
+       
+           var ty = mst.content.split("&")[ms.content.indexOf(zag)]
+      
+            
+            ms.edit(ms.content.replace(zag+"&",""))
+mse.edit(mse.content.replace(text+"&",""))
+mst.edit(mst.content.replace(ty+"&",""))
+function timede() {
+ coms1()
+}
+
+setTimeout(timede, 1500);
+        
+         
+         
+
+
+           }
+           
+         
+
+
+         })
+         })
+         })
+}
+     function chec(zag, text)
+          {
+           
+          if(zag != "" && text != "")
+           {
+         client2.guilds.get("351491707554103296").channels.get("559693081113264135").fetchMessage("559694168432181259")
+         .then(ms=>{
+              client2.guilds.get("351491707554103296").channels.get("559693081113264135").fetchMessage("559694180062986250")
+         .then(mse=>{
+            client.guilds.get("351491707554103296").channels.get("559693081113264135").fetchMessage("561816369620975616")
+         .then(mst=>{
+           if(document.getElementById("c2").checked == true)
+           {
+  mst.edit(mst.content+document.getElementById("lestc").value+":"+document.getElementById("chlstc").value+"&")
+           }
+            if(document.getElementById("c1").checked == true)
+           {
+  mst.edit(mst.content+0+"&")
+           }
+            if(document.getElementById("c3").checked == true)
+           {
+  mst.edit(mst.content+2+"&")
+           }
+            ms.edit(ms.content+zag+"&")
+                mse.edit(mse.content+text+"&")
+          
+               var size = ms.content.split("&").length
+  document.getElementById("commands").innerHTML =  document.getElementById("commands").innerHTML + "\n<div id=\""+size+"\" class='comanda'><button id='"+i+"d' onclick='dlet(\""+zag+"\",\""+text+"\","+size+")' class='dlt'>✖</button><button id="+i+" onclick='cl(\""+zag+"\",\""+text+"\","+size+")' class='red'>✎</button><b>"+zag+"</b><br><p>"+text+"</p></div>"
+     document.getElementsByClassName("rolegetc")[0].style.display = "none"
+         })
+         })
+        
+       
+         })
+          }
+            if(zag == "" && text == "")
+          {
+              alert("Введите данные в оба поля")
+          }
+          if(zag == "" && text != "")
+          {
+              alert("Введите команду")
+          }
+          if(zag != "" && text == "")
+          {
+              alert("Введите ответ на команду")
+          }
+          }
+          
+             function ched(zag, text, n)
+          {
+           
+           if(zag != "" && text != "")
+           {
+             if(zag != "help" && zag != "online" & zag != "rules")
+             {
+console.log("daaa")
+            
+  client2.guilds.get("351491707554103296").channels.get("559693081113264135").fetchMessage("559694168432181259")
+         .then(ms=>{
+              client2.guilds.get("351491707554103296").channels.get("559693081113264135").fetchMessage("559694180062986250")
+         .then(mse=>{
+             client.guilds.get("351491707554103296").channels.get("559693081113264135").fetchMessage("561816369620975616")
+         .then(mst=>{
+             var typo = mst.content.split("&")
+             var mgs = typo[parseInt(document.getElementById("zn").value)]
+             if(document.getElementById("e1").checked == true)
+             {
+                 mst.edit(mst.content.replace(mgs, "0"))
+             }
+               if(document.getElementById("e2").checked == true)
+             {
+               mst.edit(mst.content.replace(mgs, document.getElementById("lestec").value+":"+document.getElementById("chlstec").value))
+             }
+               if(document.getElementById("e3").checked == true)
+             {
+               mst.edit(mst.content.replace(mgs, "2"))
+             }
+             mse.edit(mse.content.replace(document.getElementById("msge").value, text))
+            ms.edit(ms.content.replace(document.getElementById("cm").value, zag)).then(f=>{
+               var size = f.content.split("&").indexOf(zag)
+            document.getElementsByTagName('b')[size].innerText = zag
+              document.getElementsByTagName('p')[size].innerText = text
+              document.getElementsByClassName("rolegete")[0].style.display = "none"
+            })
+           
+           
+         
+  })
+         })
+           }) 
+            }
+            else
+            {
+              if(zag == "help")
+              {
+           
+                 client.guilds.get("351491707554103296").channels.get("562095836389965872").fetchMessage("562095968305152010")
+         .then(ms=>{
+              client.guilds.get("351491707554103296").channels.get("562095836389965872").fetchMessage("562099983482880021")
+         .then(mse=>{
+            client.guilds.get("351491707554103296").channels.get("562095836389965872").fetchMessage("562099990307274762")
+         .then(ser=>{
+           client.guilds.get("351491707554103296").channels.get("562095836389965872").fetchMessage("562099997529604106")
+         .then(chl=>{
+ if(document.getElementById("e1").checked == true)
+             {
+                 ms.edit(0)
+             }
+               if(document.getElementById("e2").checked == true)
+             {
+               ms.edit(1)
+               ser.edit(document.getElementById("lestec").value)
+               chl.edit(document.getElementById("chlstec").value)
+             }
+               if(document.getElementById("e3").checked == true)
+             {
+              ms.edit(2)
+             }
+ mse.edit(document.getElementById("texte").value)
+  document.getElementsByClassName("rolegete")[0].style.display = "none"
+         })
+         })
+         })
+         })
+              }
+               if(zag == "rules")
+              {
+           
+                client.guilds.get("351491707554103296").channels.get("562095870313758732").fetchMessage("562095935698632732")
+         .then(ms=>{
+              client.guilds.get("351491707554103296").channels.get("562095870313758732").fetchMessage("562101123448700929")
+         .then(mse=>{
+            client.guilds.get("351491707554103296").channels.get("562095870313758732").fetchMessage("562101130667098157")
+         .then(ser=>{
+           client.guilds.get("351491707554103296").channels.get("562095870313758732").fetchMessage("562101137398824961")
+         .then(chl=>{
+ if(document.getElementById("e1").checked == true)
+             {
+                 ms.edit(0)
+             }
+               if(document.getElementById("e2").checked == true)
+             {
+               ms.edit(1)
+               ser.edit(document.getElementById("lestec").value)
+               chl.edit(document.getElementById("chlstec").value)
+             }
+               if(document.getElementById("e3").checked == true)
+             {
+              ms.edit(2)
+             }
+ mse.edit(document.getElementById("texte").value)
+  document.getElementsByClassName("rolegete")[0].style.display = "none"
+         })
+         })
+         })
+         })
+              }
+            }
+           }
+          if(zag == "" && text == "")
+          {
+              alert("Введите данные в оба поля")
+          }
+          if(zag == "" && text != "")
+          {
+              alert("Введите команду")
+          }
+          if(zag != "" && text == "")
+          {
+            if(zag == "online")
+            {
+
+            
+              client.guilds.get("351491707554103296").channels.get("562095859047858196").fetchMessage("562095953213915136")
+         .then(mse=>{
+            client.guilds.get("351491707554103296").channels.get("562095859047858196").fetchMessage("562098785400913930")
+         .then(ser=>{
+           client.guilds.get("351491707554103296").channels.get("562095859047858196").fetchMessage("562098792405663764")
+         .then(chl=>{
+ if(document.getElementById("e1").checked == true)
+             {
+                 mse.edit(0)
+             }
+               if(document.getElementById("e2").checked == true)
+             {
+               mse.edit(1)
+               ser.edit(document.getElementById("lestec").value)
+               chl.edit(document.getElementById("chlstec").value)
+             }
+               if(document.getElementById("e3").checked == true)
+             {
+              mse.edit(2)
+             }
+
+  document.getElementsByClassName("rolegete")[0].style.display = "none"
+         })
+         })
+         })
+         
+            }
+            else
+            {
+                alert("Введите ответ на команду")
+            }
+            
+          }
+       
+          }
+      function pass()
+        {
+           client.guilds.get('351491707554103296').channels.get('558707260700885054').fetchMessage("558707284176273450")
+           .then(msg => msg.edit(document.getElementById("passs").value))
+           document.getElementById("shps").innerText = "Пароль: " + document.getElementById("passs").value
+        }
+        function c1()
+{
+  console.log("w")
+ if(document.getElementById("c1").checked == true)
+  {
+
+     document.getElementsByClassName("rolegetc")[0].style.height = "418px"
+            document.getElementById("in").style.top = "50"
+          document.getElementsByClassName("rolegetce")[0].style.display = "none"
+  }
+ if(document.getElementById("c2").checked == true)
+  {
+
+            document.getElementsByClassName("rolegetce")[0].style.display = "block"
+      
+           document.getElementsByClassName("rolegetc")[0].style.height = "625px"
+           document.getElementById("in").style.top = "260"
+
+  }
+  if(document.getElementById("c3").checked == true)
+  {
+
+     document.getElementsByClassName("rolegetc")[0].style.height = "418px"
+      document.getElementById("in").style.top = "50"
+          document.getElementsByClassName("rolegetce")[0].style.display = "none"
+  }
+}
+ function e1()
+{
+  console.log("w")
+ if(document.getElementById("e1").checked == true)
+  {
+    
+    if( document.getElementById("ceh").value == "online")
+    {
+       document.getElementsByClassName("rolegete")[0].style.height = "198px"
+      document.getElementById("ine").style.top = "90"
+          document.getElementsByClassName("rolegetec")[0].style.display = "none"
+    }
+    else
+    {
+         document.getElementsByClassName("rolegete")[0].style.height = "418px"
+            document.getElementById("ine").style.top = "70"
+          document.getElementsByClassName("rolegetec")[0].style.display = "none" 
+    }
+ 
+  }
+ if(document.getElementById("e2").checked == true)
+  {
+    if( document.getElementById("ceh").value == "help")
+    {
+       document.getElementsByClassName("rolegetec")[0].style.display = "block"
+           document.getElementById("ine").style.top = "290"
+                  document.getElementsByClassName("rolegete")[0].style.height = "638"
+    }
+     if( document.getElementById("ceh").value == "online")
+    {
+      document.getElementsByClassName("rolegetec")[0].style.display = "block"
+      
+           document.getElementsByClassName("rolegete")[0].style.height = "405px"
+           document.getElementById("ine").style.top = "280"
+    }
+else
+{
+ document.getElementsByClassName("rolegetec")[0].style.display = "block"
+      
+           document.getElementsByClassName("rolegete")[0].style.height = "625px"
+           document.getElementById("ine").style.top = "280"
+}
+           
+
+  }
+  if(document.getElementById("e3").checked == true)
+  {
+   if( document.getElementById("ceh").value == "online")
+    {
+       document.getElementsByClassName("rolegete")[0].style.height = "198px"
+      document.getElementById("ine").style.top = "90"
+          document.getElementsByClassName("rolegetec")[0].style.display = "none"
+    }
+    else
+    {
+       document.getElementsByClassName("rolegete")[0].style.height = "418px"
+      document.getElementById("ine").style.top = "70"
+          document.getElementsByClassName("rolegetec")[0].style.display = "none"
+    }
+    
+  }
+}
+         function cmde()
+     {
+   console.log("wow")
+        document.getElementsByClassName("rolegetc")[0].style.display = "block"
+         document.getElementById("rembc").style.display = "block"
+     }
+        client.on('message', msg => {
+      if(msg.content.includes("-sen"))
+      {
+        msg.channel.send("0&")
+      }
+          });
+        
+        </script>
+    </head>
+    <body>
+   
+
+   <div id="verify" class="wowe">0</div>
+      <div id="sd">
+             <div id="si">
+            <button id="a" onclick="change2()">Настройка бота</button>
+            <button id="b" onclick="change()">Ручной постинг</button>
+            <button id="c" onclick="change3()">Постинг онлайна</button>
+            <button id="d" onclick="change4()">Репостинг телеграма</button>
+            <button id="e" onclick="change5()">Команды</button>
+            <button id="f" onclick="change6()">Welcome</button>
+            </div>  
+            </div> 
+          
+                   <div id="verf">
+                   <div id="remb">
+   <div class="ver">
+   <div id="err">Пароль неверный</div>
+      <input type="zam" id="zav" placeholder="Пароль" onkeypress="runScriptv(event)"/>
+  <button id="hev" onclick="hev()"><strong>Зайти</strong></button>
+        </div>
+           </div>
+                   </div>
+
+
+                   <div id="start" class="wowe">
+
+           <div id="re" style="width: 400px;">
+    
+ <div id="usn">Username: --</div>
+            <input type="text" id="titles" placeholder="Юзернейм" onkeypress="us(event)"/>
+        
+           
+            <button id="hls" onclick="hl()"><strong>Вставить</strong></button>
+      
+           </div>
+
+           <div id="shps">Пароль: --</div>
+          <input type="text" id="passs" placeholder="Пароль" onkeypress="parol(event)"/>
+            <button id="chpss" onclick="pass()"><strong>Сменить</strong></button>
+          
+             <div id="avas">
+                <input type="zam" id="za" placeholder="Ссылка на картинку" onkeypress="avae(event)"/>
+                <button id="he" onclick="he()"><strong>Сменить</strong></button>
+       <div id="bor">
+          
+  <img id="oc" src="./file.bmp" style="width: 144px;"/>
+       </div>
+    
+      </div>
+                   </div>
+                   <div id="pot" class="wowe">
+<div id="remb">
+   <div class="rolegetp">
+   <div id="usnp">Сервер: -- , Канал: --</div>
+    <select id="lestp" onchange="len()">
+           
+</select>
+  <button id="appp" onclick="app(document.getElementById('lestp').value, document.getElementById('chlsp').value)">Изменить</button>
+ <select id="chlsp">
+           
+</select>
+
+  <input id="zagp" placeholder="Заголовок"/>
+         <input id="textp" placeholder="Текст"/>
+         <input id="picp" placeholder="URL Картинки"/>
+  
+
+         <button id="butp" onclick="che(document.getElementById('zagp').value, document.getElementById('textp').value, document.getElementById('picp').value)">Отправить</button>
+         
+        </div>
+      
+           </div>
+                   </div>
+                   
+        <div id="online" class="wowe">
+ <div id="desapp">Настройки рассылки:</div>
+
+
+      <div id="usnpp">Сервер: -- , Канал: --</div>
+       <input type="checkbox" name="option1" id="bc" value="a1" onchange="bc()" checked>Показ онлайна в определенное время
+    <select id="lestpp" onchange="lenpp()">
+           
+</select>
+  <button id="apppp" onclick="apppp(document.getElementById('lestpp').value, document.getElementById('chlspp').value)">Изменить</button>
+ <select id="chlspp" >
+           
+</select>
+        <div id="zagpp">Рассылка</div>
+    <select id="spi" onchange="shp()">
+
+	<option id="o1">1</option>
+	<option id="o2">2</option>
+	<option id="o3">3</option>
+   <option id="o4">4</option>
+	<option id="o5">5</option>
+	<option id="o6">6</option>
+</select>
+   
+      <div id="ras">
+      <input type="text" maxlength="2" id="1h" class="ras" placeholder="чч"/>
+      <input type="text" maxlength="2" id="2h" class="ras" placeholder="чч" disabled/>
+      <input type="text" maxlength="2" id="3h" class="ras" placeholder="чч" disabled/>
+          <input type="text" maxlength="2" id="4h" class="ras" placeholder="чч" disabled/>
+      <input type="text" maxlength="2" id="5h" class="ras" placeholder="чч" disabled/>
+      <input type="text" maxlength="2" id="6h" class="ras" placeholder="чч" disabled/>
+      </div>
+      <div id="ras2">
+      <input type="text" maxlength="2" id="1m" class="ras" placeholder="мм"/>
+      <input type="text" maxlength="2" id="2m" class="ras" placeholder="мм" disabled/>
+      <input type="text" maxlength="2" id="3m" class="ras" placeholder="мм" disabled/>
+       <input type="text" maxlength="2" id="4m" class="ras" placeholder="мм" disabled/>
+      <input type="text" maxlength="2" id="5m" class="ras" placeholder="мм" disabled/>
+      <input type="text" maxlength="2" id="6m" class="ras" placeholder="мм" disabled/>
+      </div>
+          <button id="hepp" onclick="razp()"><strong>Применить</strong></button>
+     
+        </div>
+
+<div id="telega" class="wowe">
+ <div id="remb">
+   <div class="rolegett">
+             <input type="checkbox" name="option12" id="bc2" value="a2" onchange="bc2()" checked>Парсинг постов из телеграм
+   <div id="usnt">Сервер: -- , Канал: --</div>
+    <select id="lestt" onchange="lent()">
+           
+</select>
+  <button id="appt" onclick="appt(document.getElementById('lestt').value, document.getElementById('chlst').value)">Изменить</button>
+ <select id="chlst" onchange="lenst()">
+           
+</select>
+
+        </div>
+           </div>
+</div>
+
+<div id="com" class="wowe">
+
+<div id="add">
+
+   <div class="rolegetc">
+   <button id="close" onclick="clos()">✖</button>
+        <div id="cho" onchange="c1()">
+<label><input type="radio" name="time" value="yes" id="c1" >Отправка в ЛС</label> 
+<label><input type="radio" name="time" value="no" id="c2">Отправка в канал</label>
+<label><input type="radio" name="time" value="no" id="c3">Отправка в любой канал</label>
+  </div>
+
+   <div class="rolegetce">
+         
+ 
+    <select id="lestc" onchange="lentc()">
+           
+</select>
+  <button id="apptc" onclick="apptc(document.getElementById('lestc').value, document.getElementById('chlstc').value)">Изменить</button>
+ <select id="chlstc" onchange="lenstc()">
+           
+</select>
+
+        </div>
+          <div id="in">
+    <div id="prefix" class="cmd">!</div>
+  <input id="zage" class="cmd" placeholder="название команды(без пробелов)"onkeypress="comac(event)" />
+         <textarea id="textc" placeholder="Текст"onkeypress="texthc(event)"></textarea>
+      
+  
+         <button id="butc" onclick="chec(document.getElementById('zage').value, document.getElementById('textc').value)">Отправить</button>
+         
+        </div>
+      
+           </div>
+   
+     </div>
+     <div id="edit">
+
+   <div class="rolegete">
+   <div id="cm"></div>
+    <div id="msge"></div>
+   <button id="closed" onclick="closed()">✖</button>
+     <div id="eho" onchange="e1()">
+   
+<label><input type="radio" name="time" value="yes" id="e1" >Отправка в ЛС</label> 
+<label><input type="radio" name="time" value="no" id="e2">Отправка в канал</label>
+<label><input type="radio" name="time" value="no" id="e3">Отправка в любой канал</label>
+  </div>
+
+   <div class="rolegetec">
+         <div id="zn" >0</div>
+         <div id="ceh" >w</div>
+   <div id="usnted">Сервер: -- , Канал: --</div>
+    <select id="lestec" onchange="lentec()">
+           
+</select>
+  <button id="apptec" onclick="apptec(document.getElementById('lestec').value, document.getElementById('chlstec').value)">Изменить</button>
+ <select id="chlstec" onchange="lenstc()">
+           
+</select>
+
+        </div>
+          <div id="ine">
+    <div id="prefix" class="cmd">!</div>
+  <input id="zagc" class="cmd" placeholder="название команды(без пробелов)" onkeypress="coma(event)"/>
+         <textarea id="texte" placeholder="Текст" onkeypress="texth(event)"></textarea>
+      
+  
+         <button id="bute" onclick="ched(document.getElementById('zagc').value, document.getElementById('texte').value)">Отправить</button>
+         
+      </div>
+      
+           </div>
+   
+     </div>
+               <div id="rembc">
+  </div>
+<div id="comd" class="comline">Команды:</div>
+    
+  
+    
+
+         <button id="burc" class="comline" onclick="cmde()">+</button>
+         
+<div id="commands">
+
+</div>
+      <div id="checks">0</div>
+</div>
+
+<div id="welcome" class="wowe">
+  <div class="rolegetw">
+  <div id="cho" onchange="w1()">
+<label><input type="radio" name="time" value="yes" id="w1" >Отправка в ЛС</label> 
+<label><input type="radio" name="time" value="no" id="w2">Отправка в канал</label>
+<label><input type="radio" name="time" value="yes" id="w3" >Не отправлять</label> 
+
+  </div>
+
+   <div class="rolegets">
+         
+   <div id="usnts">Сервер: -- , Канал: --</div>
+    <select id="lests" onchange="lents()">
+           
+</select>
+  <button id="appts" onclick="appts(document.getElementById('lests').value, document.getElementById('chlsts').value)">Изменить</button>
+ <select id="chlsts" onchange="lensts()">
+           
+</select>
+
+        </div>
+        
+         <textarea id="textw" placeholder="Текст" onkeydown="ce(event)" onkeypress="textw(event)"></textarea>
+      
+  
+         <button id="butw" onclick="chew(document.getElementById('textw').value)">Отправить</button>
+         
+      
+      
+           </div>
+</div>
+
+    </body>
+</html>

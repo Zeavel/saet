@@ -1,0 +1,1252 @@
+body{
+    background-color: #36393e;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+ 
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+  
+}
+#block
+{
+    position: absolute;
+    background-color: #36393e;
+    height: 1080px;
+    width: 1920px;
+}
+#verify
+{
+    position: absolute;
+    display: none;
+}
+.roleget {
+    margin-left:500px;
+margin-right:auto;
+
+    width: 500px;
+    height: 250px;
+    
+  position: relative;
+ 
+    top: 30%;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background: rgba(46, 48, 54, 0.3);
+    border-color: rgba(46, 48, 54, 0.6);
+
+   
+    padding: 8px 10px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+.ver {
+    margin-left:500px;
+    margin-right:auto;
+
+    width: 500px;
+    height: 170px;
+    
+  
+ 
+    top: 30%;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background: rgba(46, 48, 54, 0.3);
+    border-color: rgba(46, 48, 54, 0.6);
+
+   
+    padding: 8px 10px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+#err
+{
+    display: none;
+}
+body { white-space: pre-line; }
+#si{
+    height: 305px;
+    width: 290px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background: rgba(46, 48, 54, 0.3);
+    border-color: rgba(46, 48, 54, 0.6);
+}
+#sd{
+    height: 130px;
+    width: 300px;
+    position: absolute;
+}
+iframe
+{
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background: rgba(46, 48, 54, 0.3);
+    border-color: rgba(46, 48, 54, 0.6);
+    margin-left: 320px;
+}
+#a{
+    margin-left: 15px;
+    width: 250px;
+    height: 35px;
+    background-color: #7289da;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    padding: 10px;
+}
+#b{
+    margin-left: 15px;
+    width: 250px;
+    height: 35px;
+    background-color: #7289da;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    margin-top: 10px;
+}
+#c{
+    margin-left: 15px;
+    width: 250px;
+    height: 35px;
+    background-color: #7289da;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+#d{
+    margin-left: 15px;
+    width: 250px;
+    height: 35px;
+    background-color: #7289da;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+#e{
+    margin-left: 15px;
+    width: 250px;
+    height: 35px;
+    background-color: #7289da;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    margin-top: 10px;
+}
+#f{
+    margin-left: 15px;
+    width: 250px;
+    height: 35px;
+    background-color: #7289da;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+#za{
+   
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 2px 2px 2px 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    background-color: #272b2b;
+    width: 450px;
+    height: 40px;
+    
+    
+}
+#zav{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 2px 2px 2px 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    background-color: #272b2b;
+    width: 500px;
+    height: 40px;
+    
+    
+}
+#hev
+{
+ 
+  
+    width: 100px;
+    height: 30px;
+    background-color: #7289da;
+    margin: 0 2px 20px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+   margin-left: 180px;
+}
+#verf
+{
+    display: block;
+}
+#start
+{
+    display: none;
+    margin-left: 350px;
+    position: absolute;
+    top: 100px;
+}
+#pot
+{
+    display: none;
+    margin-left: 350px;
+    position: absolute;
+    top: 100px;
+}
+#online
+{
+    display: none;
+    margin-left: 350px;
+    position: absolute;
+    top: 100px;
+}
+#telega
+{
+    display: none;
+    margin-left: 350px;
+    position: absolute;
+    top: 100px;
+}
+#com
+{
+    display: none;
+    margin-left: 350px;
+    position: absolute;
+    top: -160;
+}
+#com
+{
+    display: none;
+    margin-left: 350px;
+    position: absolute;
+    top: -160;
+}
+#bc
+{
+    color: white;
+    
+    margin-bottom: 20px;
+
+}
+#bc2
+{
+    color: white;
+}
+#usn
+{
+    margin-top: 12px;
+    color: white;
+}
+#titles
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 2px 2px 2px 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    background-color: #272b2b;
+    width: 200px;
+    height: 40px;
+    
+   
+
+    
+    padding-left: 15px;
+
+}
+#hls
+{
+ 
+  
+    width: 100px;
+    height: 30px;
+    background-color: #7289da;
+    margin: 0 2px 20px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+}
+#chpss
+{
+ 
+   
+
+
+    width: 100px;
+    height: 30px;
+    background-color: #7289da;
+    margin: 0 2px 20px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+}
+#passs
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 2px 2px 2px 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    background-color: #272b2b;
+    width: 200px;
+    height: 40px;
+    
+   
+
+    margin-bottom: 25px;
+
+    
+    padding-left: 15px;
+
+}
+#avas{
+    top: 132px;
+    position: absolute;
+    left: 460px;
+    
+}
+#he
+{
+ 
+  
+    width: 100px;
+    height: 30px;
+    background-color: #7289da;
+    margin: 0 2px 20px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    margin-top: 55px;
+}
+.rolegetp {
+    margin-left:100px;
+margin-right:auto;
+
+    width: 500px;
+    height: 540px;
+    
+  
+ 
+    top: 10%;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background: rgba(46, 48, 54, 0.3);
+    border-color: rgba(46, 48, 54, 0.6);
+
+   
+    padding: 8px 10px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+#lestp
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+ 
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background-color: #272b2b;
+    width: 300px;
+    height: 50px;
+
+
+}
+#appp {
+
+    position: absolute;
+    margin-left: 350px;
+  
+    width: 100px;
+    height: 50px;
+    background-color: #7289da;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+   }
+   #chlsp
+{
+    margin-top: 10px;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+ 
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background-color: #272b2b;
+    width: 300px;
+    height: 50px;
+
+
+}
+#zagp
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 2px 2px 2px 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background-color: #272b2b;
+    width: 500px;
+    height: 50px;
+    
+    margin-top: 20px;
+    padding-left: 15px;
+}
+#textp
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 2px 2px 2px 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background-color: #272b2b;
+    width: 500px;
+    height: 50px;
+   
+    
+    padding-left: 15px;
+}
+#picp
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 2px 2px 2px 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background-color: #272b2b;
+    width: 500px;
+    height: 50px;
+   
+    
+    padding-left: 15px;
+}
+.rolegetp #butp
+{
+    position: absolute;
+    top: 520px;
+    margin-left: 200px;
+    width: 100px;
+    height: 50px;
+    background-color: #7289da;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+}
+#lestpp
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+ 
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background-color: #272b2b;
+    width: 300px;
+    height: 50px;
+
+
+}
+#apppp {
+
+    position: absolute;
+    margin-left: 350px;
+  
+    width: 100px;
+    height: 50px;
+    background-color: #7289da;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+   }
+   #chlspp
+{
+    margin-top: 10px;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+ 
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background-color: #272b2b;
+    width: 300px;
+    height: 50px;
+
+
+}
+#spi{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 2px 2px 2px 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    background-color: #272b2b;
+    width: 200px;
+    height: 40px;
+    
+    
+    padding-left: 15px;
+}
+.ras{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 2px 2px 2px 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    background-color: #272b2b;
+    width: 35px;
+    height: 40px;
+    
+    
+    padding-left: 15px;
+
+}
+#ras2{
+
+    position: relative;
+      left:65px;
+      top: -312;
+     
+  }
+  #hepp
+{
+ top: -310;
+  position: relative;
+    width: 100px;
+    height: 30px;
+    background-color: #7289da;
+    margin: 0 2px 20px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    margin-top: 55px;
+}
+.rolegett {
+    margin-left:100px;
+margin-right:auto;
+
+    width: 500px;
+    height: 250px;
+    
+  
+ 
+    top: 30%;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background: rgba(46, 48, 54, 0.3);
+    border-color: rgba(46, 48, 54, 0.6);
+
+   
+    padding: 8px 10px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+#lestt
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+ 
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background-color: #272b2b;
+    width: 300px;
+    height: 50px;
+
+
+}
+#appt {
+
+    position: absolute;
+    margin-left: 350px;
+  
+    width: 100px;
+    height: 50px;
+    background-color: #7289da;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+   }
+   #chlst
+{
+    margin-top: 10px;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+ 
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background-color: #272b2b;
+    width: 300px;
+    height: 50px;
+
+
+}
+#usnpp
+{
+    position: absolute;
+    top: 90;
+}
+.rolegetc {
+    z-index: 3;
+    display: none;
+    margin-left:15%;
+margin-right:auto;
+
+    width: 500px;
+    height: 398px;
+    
+   position: fixed;
+
+    top: 30%;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background: rgba(46, 48, 54, 0.3);
+    border-color: rgba(46, 48, 54, 0.6);
+
+   
+    padding: 8px 10px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+#zn
+{
+    display: none;
+}
+#ceh
+{
+    display: none;
+}
+.rolegete {
+    position: absolute;
+    z-index: 3;
+    display: none;
+    margin-left:28%;
+margin-right:auto;
+
+    width: 500px;
+    height: 348px;
+    
+   
+
+    top: 20%;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background: rgba(46, 48, 54, 0.85);
+    border-color: rgba(46, 48, 54, 0.6);
+
+   
+    padding: 8px 10px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+}
+#close
+{
+
+    width: 25px;
+    height: 25px;
+    background-color: #7289da;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    position: absolute;
+    right: 10px;
+    position: absolute;
+    right:10px;
+    top: 11px;
+}
+#closed
+{
+
+    width: 25px;
+    height: 25px;
+    background-color: #7289da;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    position: absolute;
+    right: 10px;
+}
+#closed
+{
+    position: absolute;
+    right:10px;
+    top: 11px;
+
+}
+.cmd
+{
+    display: inline;
+}
+#zagc
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 30px 2px 2px 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background-color: #272b2b;
+    width: 490px;
+    height: 30px;
+    position: absolute;
+    top: 16;
+    left: 20;
+    
+    padding-left: 15px;
+}
+#zage
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 30px 2px 2px 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background-color: #272b2b;
+    width: 490px;
+    height: 30px;
+    position: absolute;
+    top: 16;
+    left: 20;
+    
+    padding-left: 15px;
+}
+#textc
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 2px 2px 2px 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background-color: #272b2b;
+    width: 500px;
+    height: 240px;
+   
+    resize: none;
+    position: absolute;
+    top: 80;
+    padding-left: 15px;
+}
+#texte
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 2px 2px 2px 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background-color: #272b2b;
+    width: 500px;
+    height: 240px;
+   
+    resize: none;
+    position: absolute;
+    top: 80;
+    padding-left: 15px;
+}
+.rolegetc #butc
+{
+    
+    position: absolute;
+    top: 317;
+    margin-top: 13px;
+    margin-left: 200px;
+    width: 100px;
+    height: 25px;
+    background-color: #7289da;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+}
+.rolegete #bute
+{
+    position: absolute;
+    top: 317;
+    margin-top: 13px;
+    margin-left: 200px;
+    width: 100px;
+    height: 25px;
+    background-color: #7289da;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+}
+
+
+.comanda {
+    
+    display: block;
+
+margin-right:auto;
+
+    width: 500px;
+    height: 35px;
+    
+   
+
+    
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background: rgba(46, 48, 54, 0.3);
+    border-color: rgba(46, 48, 54, 0.6);
+
+   
+    padding: 8px 10px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+  
+}
+#burc
+{
+    
+    position: absolute;
+    top: 339px;
+    left: 80px;
+    z-index: 3;
+}
+p
+{
+    
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+.red
+{
+    width: 25px;
+    height: 25px;
+    background-color: #7289da;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    position: absolute;
+    left: 490px;
+}
+.dlt
+{
+    width: 25px;
+    height: 25px;
+    background-color: #da3737;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    position: absolute;
+    left: 460px;
+}
+#prefix
+{
+    
+    position: absolute;
+    top: 50;
+
+}
+#commands
+{
+    
+    position: relative;
+    top: -190;
+    z-index: 2;
+
+}
+#checks
+{
+    display: none;
+}
+.rolegetw {
+ display: none;
+
+    margin-left:25%;
+margin-right:auto;
+
+    width: 500px;
+    height: 368px;
+    
+   position: absolute;
+
+    top: 30%;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background: rgba(46, 48, 54, 0.3);
+    border-color: rgba(46, 48, 54, 0.6);
+
+   
+    padding: 8px 10px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+#textw
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 2px 2px 2px 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background-color: #272b2b;
+    width: 500px;
+    height: 240px;
+   
+    resize: none;
+    position: absolute;
+    top: 100;
+    padding-left: 15px;
+}
+.rolegetw #butw
+{
+    position: absolute;
+    top: 339;
+    margin-top: 13px;
+    margin-left: 200px;
+    width: 100px;
+    height: 25px;
+    background-color: #7289da;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+}
+.rolegetw {
+
+    display: none;
+        margin-left:25%;
+    margin-right:auto;
+    
+        width: 500px;
+        height: 368px;
+        
+       position: absolute;
+    
+        top: 30%;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: 0 3px 3px 0;
+        background: rgba(46, 48, 54, 0.3);
+        border-color: rgba(46, 48, 54, 0.6);
+    
+       
+        padding: 8px 10px;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 14px;
+    }
+    #textw
+    {
+        font-size: 0.9375rem;
+        font-weight: 400;
+        color: gainsboro;
+        margin: 2px 2px 2px 0;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: 0 3px 3px 0;
+        background-color: #272b2b;
+        width: 500px;
+        height: 240px;
+       
+        resize: none;
+        position: absolute;
+        top: 100;
+        padding-left: 15px;
+    }
+    .rolegetw #butw
+    {
+        position: absolute;
+        top: 339;
+        margin-top: 13px;
+        margin-left: 200px;
+        width: 100px;
+        height: 25px;
+        background-color: #7289da;
+      
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #fff;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: 3px;
+    }
+    #cho
+    {
+        position: absolute;
+        top: 5;
+        z-index: 2;
+    }
+    #eho
+    {
+        position: absolute;
+        top: 5;
+        z-index: 2;
+    }
+    .rolegets {
+        position: absolute;
+        z-index: 1;
+        top: 45px;
+        display: none;
+    }
+    #lests
+    {
+        font-size: 0.9375rem;
+        font-weight: 400;
+        color: gainsboro;
+     
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: 0 3px 3px 0;
+        background-color: #272b2b;
+        width: 300px;
+        height: 50px;
+    
+    
+    }
+    #appts {
+    
+        position: absolute;
+        margin-left: 350px;
+      
+        width: 100px;
+        height: 50px;
+        background-color: #7289da;
+      
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #fff;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: 3px;
+       }
+       #chlsts
+    {
+        margin-top: 10px;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        color: gainsboro;
+     
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: 0 3px 3px 0;
+        background-color: #272b2b;
+        width: 300px;
+        height: 50px;
+    
+    
+    }
+    #in
+{
+    position: absolute;
+    top: 50;
+}
+#ine
+{
+    position: absolute;
+    top: 70;
+}
+.rolegetce {
+    display: none;
+   
+     
+       
+      position: absolute;
+   
+top: 50px;
+   
+      z-index: 1;
+   }
+   #lestc
+   {
+       font-size: 0.9375rem;
+       font-weight: 400;
+       color: gainsboro;
+    
+       border: 1px solid rgba(0,0,0,.125);
+       border-radius: 0 3px 3px 0;
+       background-color: #272b2b;
+       width: 300px;
+       height: 50px;
+   
+   
+   }
+   #apptc {
+
+    position: absolute;
+    margin-left: 350px;
+  
+    width: 100px;
+    height: 50px;
+    background-color: #7289da;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+   }
+   #chlstc
+{
+    margin-top: 10px;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+ 
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background-color: #272b2b;
+    width: 300px;
+    height: 50px;
+
+
+}
+.rolegetec {
+    display: none;
+   
+     
+       
+      position: absolute;
+   
+      top: 73px;
+   
+      z-index: 1;
+   }
+   #lestec
+   {
+       font-size: 0.9375rem;
+       font-weight: 400;
+       color: gainsboro;
+    
+       border: 1px solid rgba(0,0,0,.125);
+       border-radius: 0 3px 3px 0;
+       background-color: #272b2b;
+       width: 300px;
+       height: 50px;
+   
+   
+   }
+   #apptec {
+
+    position: absolute;
+    margin-left: 350px;
+  
+    width: 100px;
+    height: 50px;
+    background-color: #7289da;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+   }
+   #chlstec
+{
+    margin-top: 10px;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+ 
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background-color: #272b2b;
+    width: 300px;
+    height: 50px;
+
+
+}
